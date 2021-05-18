@@ -1,0 +1,26 @@
+{
+  "name": "yanghan",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "scripts": {
+    "test": "test command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanghan0218/yanghan0218.github.io.git"
+  },
+  "keywords": [
+    "yanghan"
+  ],
+  "author": {
+    "email": "",
+    "name": "YangHan",
+    "url": "https://www.hanhais.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanghan0218/yanghan0218.github.io/issues"
+  },
+  "homepage": "https://www.hanhais.com"
+}
