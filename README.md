@@ -1,25 +1,4 @@
-# 导航
-<!-- # yanghan0218.github.io
-[hanhais.com](https://hanhais.com)
-
-### Hi there 👋
-
-<img src="https://github-readme-stats.vercel.app/api?username=yanghan0218&show_icons=true&icon_color=87ceeb&title_color=ff69b4&text_color=718096&bg_color=ffffff00&hide_title=false" />
-
-**yanghan0218/yanghan0218** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-<!-- # 导航 -->
+# [导航](https://hanhais.com)
 
 * [<img src="https://www.baidu.com/favicon.ico" width="16px">百度一下](https://www.baidu.com "百度一下")
 * [<img src="https://fanyi.baidu.com/favicon.ico" width="16px">百度翻译](https://fanyi.baidu.com "百度翻译")
@@ -43,7 +22,6 @@ Here are some ideas to get you started:
 * [<img src="https://www.nuxtjs.cn/favicon.ico" width="16px">Nuxt.js](https://www.nuxtjs.cn "Nuxt.js")
 * [<img src="https://www.layui.com/favicon.ico" width="16px">Layui](https://www.layui.com "Layui")
 * [<img src="https://nodejs.org/favicon.ico" width="16px">Node.js](https://nodejs.org "Node.js")
-<!-- * [<img src="https://socket.io/favicon.ico" width="16px">Socket.IO](https://socket.io "Socket.IO") -->
 * [<img src="http://momentjs.cn/static/img/moment-favicon.png" rel="noreferrer" width="16px">Moment.js](http://momentjs.cn "Moment.js")
 * [<img src="http://mockjs.com/assets/img/logo-2.svg" rel="noreferrer" width="16px">Mock.js](http://mockjs.com "Mock.js")
 * [<img src="https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/zh/images/favicon.png" width="16px">echarts](https://echarts.apache.org "echarts")
