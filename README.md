@@ -20,5 +20,6 @@ Here are some ideas to get you started:
 -->
 
 # 导航
-- 
-  [!<img src="https://www.baidu.com/favicon.ico" width="16px">百度一下](https://www.baidu.com)
+- [<img src="[1]/favicon.ico" width="16px">百度一下](https://www.baidu.com "百度一下")
+
+[1]: https://www.baidu.com
