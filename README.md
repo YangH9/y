@@ -1,3 +1,4 @@
+# 导航
 <!-- # yanghan0218.github.io
 [hanhais.com](https://hanhais.com)
 
@@ -19,7 +20,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-# 导航
-- [<img src="[1]/favicon.ico" width="16px">百度一下](https://www.baidu.com "百度一下")
-
-[1]: https://www.baidu.com
+- [<img src="https://www.baidu.com/favicon.ico" width="16px">百度一下](https://www.baidu.com "百度一下")
