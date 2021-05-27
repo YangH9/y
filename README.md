@@ -1,5 +1,4 @@
-<!--
-# yanghan0218.github.io
+<!-- # yanghan0218.github.io
 [hanhais.com](https://hanhais.com)
 
 ### Hi there 👋
@@ -22,4 +21,4 @@ Here are some ideas to get you started:
 
 # 导航
 - 
-  [![百度一下](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADCklEQVQ4jXWTTWhUdxTFz/3/33w2CdNMQkMaqfmAGqziIiRtESutkqKgmEUJootSKF0I4kK3ChoUa6ltLWiRbrqsUlsrWlMVP6K2BCtBtDZ+JdFM6ryYmHHezHsv754uEo2bXjhwuPdyFgd+INlNMkcympFyRqTqnOfsZu6POZLdIOnOniKSOjEZ6ZZted25x6WqMjcW8tNNYzxwcEJnMl+EkKSLWRP5gep0RN23/4lW1d1hdt4d9l3x+MXX40xnB1nffI/nL3o6Pa0ahnMhBoCSkHhMxBrI4N1AMhnLRELwKBfCdSNkaywI4fBIKNaKOA6EhABQo6pGhPLTLwUc/fkZutZWUEQlU2XR0ZZCR3sKnqdoabayZHGCh76fRP81HyIUVTUgqRf7PK1ruqfVDXf15OkCb94q88FQ8KK6a9dLfJwPuXOPSyczqG8vH9G8GypJNQDk+kBZrIFUVYqcu1BC64IEnhUVm7fmsb3HRUtTDLU1FuculNDc6EhuLJTb/wQCQBySaG9LIpEAxp8o3luawtBwgM41oyiVCWuBP/t9HP+xHu1tSXz5zQSWvpNC64I4lAqJoojGCK78UYYfEIsWxrG6axRNjTEYI+i7WkLgEx91VaBnRxanz5SwZHEc89+IQRUQVaUqYa3B8EiI9R+PYWg4xA+HX8NfAz6+/W4Kla8YeCXFyg/S2L+3Fo4VRJHCGIEhhdYa/n074IrVo1z1YRqXfm/AorcSKEwRh76qRUWFYN/uGjwYCrFq3SgLBaUxhoDQqKoAlAMHJyWdhmz6LMNlnQ9x7HgRmVcNkklB3lWEIfB6XYyXLnvSe7YoIpQoUjHGGAUArww+nSLv3w9l765arnw/Bb9MKIHPe7J4tyNJpYq1loUCCQggojIdkdZAfz1ZlI2f/IuGBgdda9JiLXCq10MsZtC5IgXPI44cK9IY4MTRejTOj5GEEZIugCyg6D1b5onfiggDoKXZkdY34/B9YuCGj4ePIlZXW2zorsTCVkcAAwDjeI7zDI0vo/t/o8/JzZHs/g8akjdG32H2lQAAAABJRU5ErkJggg==)百度一下](https://www.baidu.com)
+  [!<img src="https://www.baidu.com/favicon.ico" width="16px">百度一下](https://www.baidu.com)
