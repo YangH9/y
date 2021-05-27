@@ -1,4 +1,4 @@
-# yanghan0218.github.io
+<!-- # yanghan0218.github.io
 [hanhais.com](https://hanhais.com)
 
 ### Hi there 👋
@@ -16,4 +16,7 @@ Here are some ideas to get you started:
 - 💬 Ask me about ...
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- ⚡ Fun fact: ... -->
+
+# 导航
+- [百度一下](https://www.baidu.com)
