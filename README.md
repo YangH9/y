@@ -1,4 +1,4 @@
-# 导航
+# yanghan0218.github.io
 <!-- # yanghan0218.github.io
 [hanhais.com](https://hanhais.com)
 
@@ -19,6 +19,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+# 导航
 
-- [<img src="https://www.baidu.com/favicon.ico" width="16px">百度一下](https://www.baidu.com "百度一下")
-- [<img src="https://fanyi.baidu.com/favicon.ico" width="16px">百度翻译](https://fanyi.baidu.com "百度翻译")
+* [<img src="https://www.baidu.com/favicon.ico" width="16px">百度一下](https://www.baidu.com "百度一下")
+* [<img src="https://fanyi.baidu.com/favicon.ico" width="16px">百度翻译](https://fanyi.baidu.com "百度翻译")
