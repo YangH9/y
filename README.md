@@ -21,6 +21,8 @@ li a img{width:16px;height:16px;}
 * [<img src="https://www.google.cn/favicon.ico">谷歌搜索](https://www.google.cn "谷歌搜索")
 * [<img src="https://fanyi.baidu.com/favicon.ico">百度翻译](https://fanyi.baidu.com "百度翻译")
 * [<img src="https://map.baidu.com/favicon.ico">百度地图](https://map.baidu.com "百度地图")
+* [<img src="https://www.bilibili.com/favicon.ico">哔哩哔哩](https://www.bilibili.com "哔哩哔哩")
+* [<img src="https://s1.music.126.net/style/favicon.ico">网易云音乐](https://music.163.com "网易云音乐")
 
 #### 码农必备（教程、学习、插件、库、框架）
 * [<img src="https://www.w3.org/favicon.ico">万维网联盟（W3C）](https://www.w3.org "万维网联盟（W3C）")
@@ -31,6 +33,8 @@ li a img{width:16px;height:16px;}
 * [<img src="https://www.runoob.com/favicon.ico">菜鸟教程](https://www.runoob.com "菜鸟教程")
 * [<img src="https://stackoverflow.com/favicon.ico">Stack Overflow](https://stackoverflow.com "Stack Overflow")
 * [<img src="https://cdn.segmentfault.com/r-71101d8c/favicon.ico">SegmentFault 思否](https://segmentfault.com "SegmentFault 思否")
+* [<img src="https://www.zhihu.com/favicon.ico">知乎](https://www.zhihu.com "知乎")
+* [<img src="https://codemart.com/favicon.ico">码市](https://codemart.com "码市")
 * [<img src="https://element.eleme.cn/favicon.ico">Element](https://element.eleme.cn/#/zh-CN "Element")
 * [<img src="https://angularjs.org/favicon.ico">angularjs](https://angularjs.org "angularjs")
 * [<img src="https://vuejs.org/images/logo.svg">vuejs](https://cn.vuejs.org "vuejs")
@@ -55,6 +59,7 @@ li a img{width:16px;height:16px;}
 * [<img src="https://www.jsdelivr.com/favicon.ico">CDN](https://www.jsdelivr.com "CDN")
 * [<img src="https://codepen.io/favicon.ico">CodePen](https://codepen.io "CodePen")
 * [<img src="https://www.postman.com/favicon.ico">Postman](https://www.postman.com "Postman")
+
 #### 云服务
 * [<img src="https://www.githubs.cn/favicon.ico">GitHub](https://github.com "GitHub")
 * [<img src="https://gitee.com/favicon.ico">码云](https://gitee.com "码云")
@@ -63,6 +68,7 @@ li a img{width:16px;height:16px;}
 * [<img src="https://cloud.tencent.com/favicon.ico">腾讯云](https://cloud.tencent.com "腾讯云")
 * [<img src="https://www.sinacloud.com/favicon.ico">新浪云](https://www.sinacloud.com "新浪云")
 * [<img src="https://www.aliyun.com/favicon.ico">阿里云](https://www.aliyun.com "阿里云")
+
 #### 各大开放平台
 * [<img src="https://open.tencent.com/favicon.ico">腾讯开放平台](https://open.tencent.com "腾讯开放平台")
 * [<img src="https://om.gtimg.cn/om/om_2.0/images/favicon_om.ico">QQ开放平台](https://om.qq.com "QQ开放平台")
@@ -83,15 +89,11 @@ li a img{width:16px;height:16px;}
 * [<img src="https://img.alicdn.com/tfs/TB1uh..zbj1gK0jSZFuXXcrHpXa-16-16.ico">阿里巴巴开放平台](https://open.1688.com "阿里巴巴开放平台")
 * [<img src="https://gw.alicdn.com/tfs/TB11oTZQFXXXXajXXXXXXXXXXXX-77-74.png">钉钉开放平台](https://open.dingtalk.com "钉钉开放平台")
 
-* [<img src="https://codemart.com/favicon.ico">码市](https://codemart.com "码市")
-* [<img src="https://www.bilibili.com/favicon.ico">哔哩哔哩](https://www.bilibili.com "哔哩哔哩")
-* [<img src="https://www.zhihu.com/favicon.ico">知乎](https://www.zhihu.com "知乎")
 * [<img src="https://mail.qq.com/favicon.ico">QQ邮箱](https://mail.qq.com "QQ邮箱")
 * [<img src="https://mail.163.com/favicon.ico">163邮箱](https://mail.163.com "163邮箱")
 * [<img src="https://www.weibo.com/favicon.ico">微博](https://www.weibo.com "微博")
 * [<img src="https://qzone.qq.com/favicon.ico">QQ空间](https://qzone.qq.com "QQ空间")
 * [<img src="https://y.qq.com/favicon.ico">QQ音乐](https://y.qq.com "QQ音乐")
-* [<img src="https://s1.music.126.net/style/favicon.ico">网易云音乐](https://music.163.com "网易云音乐")
 * [<img src="https://twitter.com/favicon.ico">Twitter](https://twitter.com "Twitter")
 * [<img src="https://www.facebook.com/favicon.ico">Facebook](https://www.facebook.com "Facebook")
 * [<img src="https://www.microsoft.com/favicon.ico">Microsoft](https://www.microsoft.com/zh-cn "Microsoft")
