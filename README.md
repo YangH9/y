@@ -7,8 +7,8 @@ h1{display:none}
 h2{margin-top:0;}
 li{list-style:none;display:inline-block;margin:0;}
 li a{padding:8px 10px;display:inline-flex;align-items:center;}
-li a:hover{background:#f2f2f2;}
-li a img{width:16px;height:16px;}
+li a:hover{box-shadow:0 0 10px #f2f2f2;}
+li a img{width:16px;height:16px;margin-right:5px;}
 </style>
 
 #### 名站导航
