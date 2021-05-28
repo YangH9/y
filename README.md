@@ -56,7 +56,7 @@ li a img{width:16px;height:16px;}
 * [<img src="https://swiperjs.com/images/favicon.png">Swiper](https://swiperjs.com "Swiper")
 * [<img src="https://www.tweenmax.com.cn/favicon.ico">TweenMax中文网](https://www.tweenmax.com.cn "TweenMax中文网")
 * [<img src="https://www.dartcn.com/assets/shared/dart/icon/64.png">Dart 编程语言中文网](https://www.dartcn.com "Dart 编程语言中文网")
-* [<img src="https://www.jsdelivr.com/favicon.ico">CDN](https://www.jsdelivr.com "CDN")
+* [<img src="https://www.jsdelivr.com/favicon.ico">jsdelivr](https://www.jsdelivr.com "jsdelivr")
 * [<img src="https://codepen.io/favicon.ico">CodePen](https://codepen.io "CodePen")
 * [<img src="https://www.postman.com/favicon.ico">Postman](https://www.postman.com "Postman")
 
