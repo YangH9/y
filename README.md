@@ -2,7 +2,6 @@
 <meta name="referrer" content="never" />
 <meta name="keywords" content="简单导航,上网导航,网站导航,网址导航,网址大全" />
 <meta name="description" content="最简洁的网址导航网站大全，办公白领设计师行业推荐比较好用的绿色小清新上网主页。企业实用工具综合极简商务风格，简单干净，成人福利，简约个性官方网页。" />
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 <style>
 h1{display:none}
 li{list-style:none;display:inline-block;margin:0;}
@@ -49,8 +48,8 @@ li a img{width:16px;height:16px;}
 * [<img src="https://www.nuxtjs.cn/favicon.ico">Nuxt.js](https://www.nuxtjs.cn "Nuxt.js")
 * [<img src="https://www.layui.com/favicon.ico">Layui](https://www.layui.com "Layui")
 * [<img src="https://nodejs.org/favicon.ico">Node.js](https://nodejs.org "Node.js")
-* [<img src="http://momentjs.cn/static/img/moment-favicon.png">Moment.js](http://momentjs.cn "Moment.js")
-* [<img src="http://mockjs.com/assets/img/logo-2.svg">Mock.js](http://mockjs.com "Mock.js")
+* [<img src="favicon/momentjs.png">Moment.js](http://momentjs.cn "Moment.js")
+* [<img src="favicon/mockjs.svg">Mock.js](http://mockjs.com "Mock.js")
 * [<img src="https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/zh/images/favicon.png">echarts](https://echarts.apache.org "echarts")
 * [<img src="https://tippyjs.bootcss.com/icons/icon-48x48.png">Tippy.js](https://tippyjs.bootcss.com "Tippy.js")
 * [<img src="https://videojs.com/favicon.ico">Video.js](https://videojs.com "Video.js")
@@ -78,7 +77,7 @@ li a img{width:16px;height:16px;}
 * [<img src="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">微信开放平台](https://open.weixin.qq.com "微信开放平台")
 * [<img src="https://mapapi.qq.com/web/lbs/logo/favicon.ico">腾讯位置服务](https://lbs.qq.com "腾讯位置服务")
 * [<img src="https://lbsyun.baidu.com/favicon.ico">百度地图开放平台](https://lbsyun.baidu.com "百度地图开放平台")
-* [<img src="https://a.amap.com/pc/static/favicon.ico">高德开放平台](https://developer.amap.com "高德开放平台")
+* [<img src="favicon/amap.ico">高德开放平台](https://developer.amap.com "高德开放平台")
 * [<img src="https://img.alicdn.com/tfs/TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico">支付宝开放平台](https://open.alipay.com "支付宝开放平台")
 * [<img src="https://open-static.pinduoduo.com/application/favicon.ico">拼多多开放平台](https://open.pinduoduo.com "拼多多开放平台")
 * [<img src="https://cloud.baidu.com/favicon.ico">百度智能云](https://cloud.baidu.com "百度智能云")
@@ -95,8 +94,6 @@ li a img{width:16px;height:16px;}
 * [<img src="https://www.weibo.com/favicon.ico">微博](https://www.weibo.com "微博")
 * [<img src="https://qzone.qq.com/favicon.ico">QQ空间](https://qzone.qq.com "QQ空间")
 * [<img src="https://y.qq.com/favicon.ico">QQ音乐](https://y.qq.com "QQ音乐")
-* [<img src="https://twitter.com/favicon.ico">Twitter](https://twitter.com "Twitter")
-* [<img src="https://www.facebook.com/favicon.ico">Facebook](https://www.facebook.com "Facebook")
 * [<img src="https://www.microsoft.com/favicon.ico">Microsoft](https://www.microsoft.com/zh-cn "Microsoft")
 * [<img src="https://www.zhipin.com/favicon.ico">BOSS直聘](https://www.zhipin.com "BOSS直聘")
 * [<img src="https://www.bt.cn/favicon.ico">宝塔面板](https://www.bt.cn "宝塔面板")
@@ -107,7 +104,7 @@ li a img{width:16px;height:16px;}
 * [<img src="https://bj.96weixin.com/favicon.ico">96编辑器](https://bj.96weixin.com "96编辑器")
 * [<img src="https://www.chinaz.com/favicon.ico">站长之家](https://www.chinaz.com "站长之家")
 * [<img src="https://processon.com/favicon.ico">在线作图](https://processon.com "在线作图")
-* [<img src="http://www.cssmoban.com/favicon.ico">模板之家](http://www.cssmoban.com "模板之家")
+* [<img src="favicon/cssmoban.ico">模板之家](http://www.cssmoban.com "模板之家")
 * [<img src="https://www.tianapi.com/favicon.ico">天行数据](https://www.tianapi.com "天行数据")
 * [<img src="https://fkw.com/favicon.ico">凡科建站](https://fkw.com "凡科建站")
 * [<img src="https://www.mycodes.net/favicon.ico">源码之家](https://www.mycodes.net "源码之家")
@@ -125,7 +122,7 @@ li a img{width:16px;height:16px;}
 * [<img src="https://apple.com.cn/favicon.ico">Apple](https://apple.com.cn "Apple")
 * [<img src="https://www.tianyancha.com/favicon.ico">天眼查](https://www.tianyancha.com "天眼查")
 * [<img src="https://www.chsi.com.cn/favicon.ico">学信网](https://www.chsi.com.cn "学信网")
-* [<img src="http://www.applicationloader.net/favicon.ico">苹果签名证书](http://www.appuploader.net "苹果签名证书")
+* [<img src="favicon/applicationloader.ico">苹果签名证书](http://www.appuploader.net "苹果签名证书")
 * [<img src="https://smallsticker.com/favicon.ico">小贴画](https://smallsticker.com "小贴画")
 * [<img src="https://www.cctv.com/favicon.ico">央视网](https://www.cctv.com "央视网")
 * [<img src="https://sf3-dycdn-tos.pstatp.com/obj/eden-cn/vlseh7ubqnuhs/motor/favicon/favicon-96x96.png">懂车帝](https://www.dongchedi.com "懂车帝")
