@@ -10,9 +10,8 @@ li a{
   display: inline-flex;
   align-items: center;
 }
-li a img{
-  width:16px;height:16px;
-}
+li a:hover{background:#f2f2f2;}
+li a img{width:16px;height:16px;}
 </style>
 
 #### 名站导航
