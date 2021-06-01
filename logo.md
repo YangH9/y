@@ -1,6 +1,6 @@
 <style>h1{display:none;}</style>
 
-## 各类图标logo
+## 图标logo
 
 ![](https://img.shields.io/badge/-42-000000?logo=42&logoColor=FFFFFF)
 ![](https://img.shields.io/badge/-.NET-512BD4?logo=.NET&logoColor=FFFFFF)
