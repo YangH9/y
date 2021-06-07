@@ -7,6 +7,8 @@
 
 ### [GVG LOGO](logo.md) / [git](git.md) / [command](command.md)
 
+<div class="urlList">
+
 #### 名站导航
 * [<img src="favicon/baidu.ico">百度一下](https://www.baidu.com "百度一下")
 * [<img src="favicon/baidu.ico">百度开发者搜索](https://kaifa.baidu.com/ "百度开发者搜索")
@@ -127,3 +129,5 @@
 * [<img src="favicon/chrome.google.png">谷歌浏览器](https://www.google.cn/chrome "谷歌浏览器")
 * [<img src="favicon/yiche.ico">易车](https://www.yiche.com "易车")
 * [<img src="favicon/ionicframework.ico">Ionic](https://ionicframework.com "Ionic")
+
+</div>
