@@ -1,18 +1,18 @@
-## 网址导航
+# 网址导航
+
 <meta name="referrer" content="never" />
 <meta name="keywords" content="简单导航,上网导航,网站导航,网址导航,网址大全" />
 <meta name="description" content="最简洁的网址导航网站大全，办公白领设计师行业推荐比较好用的绿色小清新上网主页。企业实用工具综合极简商务风格，简单干净，成人福利，简约个性官方网页。" />
 <style>
-h1{display:none;}
-h2{margin-top:0;}
+h1:first-child{display:none;}
+h1{margin-top:0;}
 li{list-style:none;display:inline-block;margin:0;}
 li a{padding:8px 10px;display:inline-flex;align-items:center;transition:all .2s linear;}
-li a:hover{box-shadow: 0 0 10px #999;}
+li a:hover{box-shadow:0 0 10px #999;}
 li a img{width:16px;height:16px;margin-right:5px;}
 </style>
 
-### [LOGO](logo.md)
-### [git](git.md)
+### [LOGO](logo.md) / [git](git.md)
 
 #### 名站导航
 * [<img src="favicon/baidu.ico">百度一下](https://www.baidu.com "百度一下")
