@@ -1,5 +1,7 @@
 # 常用命令汇总
 
+### [首页](/)
+
 <meta name="referrer" content="never" />
 <meta name="keywords" content="常用命令汇总" />
 <meta name="description" content="常用命令汇总" />
