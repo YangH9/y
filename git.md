@@ -3,9 +3,7 @@
 <meta name="referrer" content="never" />
 <meta name="keywords" content="Git常用命令" />
 <meta name="description" content="Git常用命令" />
-<style>
-h1:first-child{display:none;}
-</style>
+<link rel="stylesheet" href="base.css">
 
 ### 下面是我整理的常用 Git 命令清单。几个专用名词的译名如下：
 
