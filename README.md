@@ -11,7 +11,8 @@ li a:hover{box-shadow: 0 0 10px #999;}
 li a img{width:16px;height:16px;margin-right:5px;}
 </style>
 
-### [LOGO](logo.md) [git](git.md)
+### [LOGO](logo.md)
+### [git](git.md)
 
 #### 名站导航
 * [<img src="favicon/baidu.ico">百度一下](https://www.baidu.com "百度一下")
