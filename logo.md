@@ -1,10 +1,8 @@
 ## 图标logo
 
-<link rel="stylesheet" href="base.css">
-
 ### [首页](/)
-### [首页](/index.html)
-### [首页](/readme.html)
+
+<link rel="stylesheet" href="base.css">
 
 ![](https://img.shields.io/badge/-42-000000?logo=42&logoColor=FFFFFF)
 ![](https://img.shields.io/badge/-.NET-512BD4?logo=.NET&logoColor=FFFFFF)
