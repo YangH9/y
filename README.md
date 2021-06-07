@@ -5,7 +5,7 @@
 <meta name="description" content="最简洁的网址导航网站大全，办公白领设计师行业推荐比较好用的绿色小清新上网主页。企业实用工具综合极简商务风格，简单干净，成人福利，简约个性官方网页。" />
 <link rel="stylesheet" href="base.css">
 
-### [LOGO](logo.md) / [git](git.md)
+### [GVG LOGO](logo.md) / [git](git.md) / [command](command.md)
 
 #### 名站导航
 * [<img src="favicon/baidu.ico">百度一下](https://www.baidu.com "百度一下")
