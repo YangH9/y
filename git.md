@@ -2,10 +2,10 @@
 <meta name="keywords" content="Git常用命令" />
 <meta name="description" content="Git常用命令" />
 <style>
-h1{display:none;}
+h1:first-child{display:none;}
 </style>
 
-## Git常用命令
+# Git常用命令
 ### 下面是我整理的常用 Git 命令清单。几个专用名词的译名如下：
 ```
 Workspace：工作区
