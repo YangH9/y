@@ -2,6 +2,10 @@
 
 <link rel="stylesheet" href="base.css">
 
+### [首页](/)
+### [首页](/index.html)
+### [首页](/readme.html)
+
 ![](https://img.shields.io/badge/-42-000000?logo=42&logoColor=FFFFFF)
 ![](https://img.shields.io/badge/-.NET-512BD4?logo=.NET&logoColor=FFFFFF)
 ![](https://img.shields.io/badge/-1001Tracklists-40AEF0?logo=1001Tracklists&logoColor=FFFFFF)
