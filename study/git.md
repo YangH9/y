@@ -5,7 +5,7 @@
 <meta name="referrer" content="never" />
 <meta name="keywords" content="Git常用命令" />
 <meta name="description" content="Git常用命令" />
-<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="../css/base.css">
 
 ### 下面是我整理的常用 Git 命令清单。几个专用名词的译名如下：
 

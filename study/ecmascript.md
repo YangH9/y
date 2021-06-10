@@ -1,5 +1,10 @@
 # JS 语法 ES6、ES7、ES8、ES9、ES10、ES11、ES12新特性
 
+<meta name="referrer" content="never" />
+<meta name="keywords" content="语法 ES6、ES7、ES8、ES9、ES10、ES11、ES12新特性" />
+<meta name="description" content="语法 ES6、ES7、ES8、ES9、ES10、ES11、ES12新特性" />
+<link rel="stylesheet" href="../css/base.css">
+
 ## 新特性
 
 ### ES6（2015）

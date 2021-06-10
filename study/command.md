@@ -5,7 +5,7 @@
 <meta name="referrer" content="never" />
 <meta name="keywords" content="常用命令汇总" />
 <meta name="description" content="常用命令汇总" />
-<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="../css/base.css">
 
 ## win+r指令
 
