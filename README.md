@@ -10,9 +10,9 @@
 
 <div class="urlList"></div>
 
-<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=w3253jyto1z" allowFullScreen="true"></iframe>
+<iframe src="https://v.qq.com/txp/iframe/player.html?vid=w3253jyto1z" frameborder="0" allowFullScreen="true"></iframe>
 
-<iframe height=498 width=510 src='https://player.youku.com/embed/XNTE3MTAxMTUzNg==' frameborder=0 allowFullScreen="true"></iframe>
+<iframe src='https://player.youku.com/embed/XNTE3MTAxMTUzNg==' frameborder="0" allowFullScreen="true"></iframe>
 
 #### 名站导航
 * [<img src="favicon/baidu.ico">百度一下](https://www.baidu.com "百度一下")
