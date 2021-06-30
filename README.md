@@ -2,10 +2,10 @@
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="简单导航,上网导航,网站导航,网址导航,网址大全" />
-<meta name="description" content="最简洁的网址导航网站大全，办公白领设计师行业推荐比较好用的绿色小清新上网主页。企业实用工具综合极简商务风格，简单干净，成人福利，简约个性官方网页。" />
+<meta name="description" content="最简洁的网址导航网站大全，办公白领设计师行业推荐比较好用的绿色小清新上网主页。企业实用工具综合极简商务风格，简单干净，简约个性官方网页。" />
 <link rel="stylesheet" href="css/base.css">
 
-### [SVG LOGO](logo.md) / [git](study/git.md) / [command](study/command.md)
+### [SVG LOGO](logo.md) / [git](study/git.md) / [command](study/command.md) / [javascript-questions](study/javascript-questions.md)
 ### [ECMASCRIPT](study/ecmascript.md) / [一行js](study/0001.md)
 ### [test](test.md)
 
