@@ -1,6 +1,6 @@
 # JavaScript 进阶问题列表
 
-### [首页](/)
+### [首页](/) / [其他语言](https://github.com/yanghan1999/javascript-questions)
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="进阶问题列表" />
