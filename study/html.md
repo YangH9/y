@@ -3,9 +3,11 @@
 ### [首页](/)
 
 <meta name="referrer" content="never" />
-<meta name="keywords" content="html标签基础" />
-<meta name="description" content="html标签基础" />
+<meta name="keywords" content="html标签基础,css基础内容" />
+<meta name="description" content="html标签基础,css基础内容" />
 <link rel="stylesheet" href="../css/base.css">
+
+## html标签基础
 
 ```html
 <!DOCTYPE html><!-- 声明文档类型 -->
@@ -85,3 +87,86 @@
 
 </html>
 ```
+
+## css基础内容
+```css
+html/* 选择器 */{
+  font-size/* 属性 */: 18px/* 值 */;
+  color/* 属性 */: #FFF/* 值 */;
+  /* 声明 */
+}
+```
+
+### 元素选择器
+
+|  |  |
+| - | - |
+| class选择器 | `.class` |
+| id选择器 | `#id` |
+| 标签选择器 | `div` |
+| 通用选择器 | `*` |
+
+### 关系选择器
+
+| | | |
+| - | - | - |
+| 后代选择器 | `div a` | `选择器1 选择器2`(选择器1内所有的后代选择器2元素) |
+| 子代选择器 | `div > a` | `选择器1 > 选择器2`(选择器1内直接的子代选择器2元素) |
+| 相邻选择器 | `div + a` | `选择器1 + 选择器2`(选择器1后相邻的一个兄弟选择器2元素) |
+| 兄弟选择器 | `div ~ a` | `选择器1 ~ 选择器2`(选择器1后所有的兄弟选择器2元素) |
+
+### 属性选择器
+
+| | | |
+| - | - | - |
+| [属性名] | [class],[id] | 匹配属性名的元素 |
+| [属性名="属性值"] | [class="class1"] | 匹配属性名和属性值的元素 |
+| [属性名~="属性值"] | [class~="class1"] | 匹配属性名和含有属性值的元素 |
+| [属性名^="属性值"] | [class^="cl"] | 匹配属性名和属性值以字符开头的元素 |
+| [属性名$="属性值"] | [class$="s1"] | 匹配属性名和属性值以字符结尾的元素 |
+| [属性名*="属性值"] | [class*="ss"] | 匹配属性名和属性值含有字符的元素 |
+| [属性名\|="属性值"] | [class\|="a"] | 属性名中含有某个属性值的元素 |
+
+### 伪类选择器
+
+#### 结构性伪类
+
+| | | |
+| - | - | - |
+| 元素:nth-child(n) | `div:nth-child` | 匹配元素内第n个子元素 |
+| 元素:nth-child(2n) | `div:nth-child(2n)` | 匹配元素内第2n个子元素 |
+| 元素:nth-child(odd) | `div:nth-child(odd)` | 匹配元素内的奇数子元素 |
+| 元素:nth-child(even) | `div:nth-child(even)` | 匹配元素内的偶数子元素 |
+| 元素:nth-child(n + x) | `div:nth-child(n + x)` | 匹配元素内大于等于x的子元素 |
+| 元素:nth-child(- n + x) | `div:nth-child(- n + x)` | 匹配元素内小于等于x的子元素 |
+| 元素:nth-child(3n + 1) | `div:nth-child(3n + 1)` | 匹配元素内几组子元素，隔行取一 |
+| 元素:first-child | `div:first-child` | 匹配元素内第一个子元素 |
+| 元素:last-child | `div:last-child` | 匹配元素内最后一个子元素 |
+| 元素:only-child | `div:only-child` | 匹配只含有一个子元素的元素 |
+| 元素:nth-last-child(n) | `div:nth-last-child(n)` | 匹配父元素的倒数第几个元素 |
+| 元素:first-of-type | `div:first-of-type` | 匹配第一个这类元素 |
+| 元素:last-of-type | `div:last-of-type` | 匹配最后一个这类元素 |
+| 元素:nth-of-type(n) | `div:nth-of-type(n)` | 匹配第几个这类元素 |
+| 元素:nth-last-of-type(n) | `div:nth-last-of-type(n)` | 匹配倒数第几个这类元素 |
+| 元素:empty | `div:empty` | 匹配没有子节点的元素 |
+| 元素:not(选择器) | `div:not()` | 匹配满足选择器条件的其他元素 |
+
+#### 伪类选择器
+
+| | | |
+| - | - | - |
+| :focus | `input:focus` | 匹配被获取到焦点的元素 |
+| :active | `div:active` | 匹配被点击时的元素 |
+| :checked | `input:checked` | 匹配被选中的单选框复选框的元素 |
+| :disabled | `input:disabled` | 匹配被禁用的元素 |
+| :enabled | `input:enabled` | 匹配可以使用的元素 |
+| :link | `a:link` | 匹配未被访问的链接元素 |
+| :visited | `a:visited` | 匹配已被访问的链接元素 |
+| :hover | `a:hover` | 匹配鼠标指针浮动在其上的元素 |
+
+#### 伪元素选择器
+
+| | | |
+| - | - | - |
+| ::before | `div::before` | 在元素内容之前插入新内容 |
+| ::after | `div::after` | 在元素内容之后插入新内容 |
