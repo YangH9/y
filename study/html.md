@@ -94,10 +94,12 @@
 
 ## css基础内容
 ```css
-html/* 选择器 */{
+/* 选择器 */
+html {
   /* 声明 */
+  /* 属性: 值 */
   font-size: 18px;
-  color/* 属性 */: #FFF/* 值 */;
+  color: #FFF;
 }
 ```
 
