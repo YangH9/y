@@ -95,9 +95,9 @@
 ## css基础内容
 ```css
 html/* 选择器 */{
-  font-size/* 属性 */: 18px/* 值 */;
-  color/* 属性 */: #FFF/* 值 */;
   /* 声明 */
+  font-size: 18px;
+  color/* 属性 */: #FFF/* 值 */;
 }
 ```
 
