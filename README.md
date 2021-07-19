@@ -5,7 +5,7 @@
 <meta name="description" content="最简洁的网址导航网站大全，办公白领设计师行业推荐比较好用的绿色小清新上网主页。企业实用工具综合极简商务风格，简单干净，简约个性官方网页。" />
 <link rel="stylesheet" href="css/base.css">
 
-### [html标签基础](study/html.md)
+### [html标签基础、css基础内容](study/html.md)
 ### [SVG LOGO](logo.md) / [git](study/git.md) / [command](study/command.md) / [javascript-questions](study/javascript-questions.md)
 ### [ECMASCRIPT](study/ecmascript.md) / [一行js](study/0001.md)
 ### [test](test.md)
