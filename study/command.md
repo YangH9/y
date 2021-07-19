@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="../css/base.css">
 
 ### 目录
-* [win+r指令](win+r指令)
-* [cmd命令行](cmd命令行)
-* [win快捷键](win快捷键)
+* [win+r指令](#win+r指令)
+* [cmd命令行](#cmd命令行)
+* [win快捷键](#win快捷键)
 
 ## win+r指令
 
