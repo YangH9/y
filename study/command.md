@@ -69,7 +69,7 @@
 17. **mmc**: 打开控制台
 18. **mobsync**: 同步命令
 19. **dxdiag**: 检查DirectX信息
-20. **drwtsn32**: **: 系统医生
+20. **drwtsn32**: 系统医生
 21. **devmgmt.msc**: 设备管理器
 22. **dfrg.msc**: 磁盘碎片整理程序
 23. **diskmgmt.msc**: 磁盘管理实用程序
@@ -348,11 +348,11 @@ Apple 键盘上的某些按键具有特殊符号和功能，例如显示屏亮�
 * **Shift-Command–竖线 (\|)**: 居中对齐。
 * **Option-Command-F**: 前往搜索栏。 
 * **Option-Command-T**: 显示或隐藏应用中的工具栏。
-* **Option-Command-C**: 拷贝样式**: 将所选项的格式设置拷贝到剪贴板。
-* **Option-Command-V**: 粘贴样式**: 将拷贝的样式应用到所选项。
-* **Option-Shift-Command-V**: 粘贴并匹配样式**: 将周围内容的样式应用到粘贴在该内容中的项目。
+* **Option-Command-C**: 拷贝样式: 将所选项的格式设置拷贝到剪贴板。
+* **Option-Command-V**: 粘贴样式: 将拷贝的样式应用到所选项。
+* **Option-Shift-Command-V**: 粘贴并匹配样式: 将周围内容的样式应用到粘贴在该内容中的项目。
 * **Option-Command-I**: 显示或隐藏检查器窗口。
-* **Shift-Command-P**: 页面设置**: 显示用于选择文稿设置的窗口。
+* **Shift-Command-P**: 页面设置: 显示用于选择文稿设置的窗口。
 * **Shift-Command-S**: 显示“存储为”对话框或复制当前文稿。
 * **Shift-Command-减号 (-)**: 缩小所选项。
 * **Shift-Command-加号 (+)**: 放大所选项。Command–等号 (=) 可实现相同的功能。
