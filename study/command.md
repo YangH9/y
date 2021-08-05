@@ -179,11 +179,11 @@
 
 要使用键盘快捷键，请按住一个或多个修饰键，然后按快捷键的最后一个键。例如，要使用 Command-C（拷贝），请按住 Command 键并按 C 键，然后同时松开这两个键。Mac 菜单和键盘通常使用符号来表示某些按键，其中包括以下修饰键：
 
-* **Command**（或 **Cmd**）⌘
-* **Shift** ⇧
-* **Option**（或 **Alt**）⌥
-* **Control**（或 **Ctrl**）⌃
-* **Caps Lock** ⇪
+* **Command**（或 **Cmd**）**⌘**
+* **Shift** **⇧**
+* **Option**（或 **Alt**）**⌥**
+* **Control**（或 **Ctrl**）**⌃**
+* **Caps Lock** **⇪**
 * **Fn**
 
 在 Windows PC 专用键盘上，请用 Alt 键代替 Option 键，用 Windows 标志键代替 Command 键。
