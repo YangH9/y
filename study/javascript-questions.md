@@ -33,7 +33,6 @@ sayHi()
 - D: `undefined` 和 `ReferenceError`
 
 <details><summary><b>答案</b></summary>
-<p>
 
 #### 答案: D
 
@@ -41,7 +40,6 @@ sayHi()
 
 通过 `let` 和 `const` 关键字声明的变量也会提升，但是和 `var` 不同，它们不会被<i>初始化</i>。在我们声明（初始化）之前是不能访问它们的。这个行为被称之为暂时性死区。当我们试图在声明之前访问它们时，JavaScript 将会抛出一个 `ReferenceError` 错误。
 
-</p>
 </details>
 
 ---
