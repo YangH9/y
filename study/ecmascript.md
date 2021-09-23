@@ -12,6 +12,7 @@
 ### ES6（2015）
 
 #### 1. 类（class）
+
 ```js
 class Man {
   constructor(name) {
@@ -26,6 +27,7 @@ man.console(); // 小豪
 ```
 
 #### 2. 模块化(ES Module)
+
 ```js
 // 模块 A 导出一个方法
 export const sub = (a, b) => a + b;
@@ -35,12 +37,14 @@ console.log(sub(1, 2)); // 3
 ```
 
 #### 3. 箭头（Arrow）函数
+
 ```js
 const func = (a, b) => a + b;
 func(1, 2); // 3
 ```
 
 #### 4. 函数参数默认值
+
 ```js
 function foo(age = 25,){
   // ...
@@ -48,29 +52,34 @@ function foo(age = 25,){
 ```
 
 #### 5. 模板字符串
+
 ```js
 const name = '小豪';
 const str = `Your name is ${name}`;
 ```
 
 #### 6. 解构赋值
+
 ```js
 let a = 1, b= 2;
 [a, b] = [b, a]; // a 2  b 1
 ```
 
 #### 7. 延展操作符
+
 ```js
 let a = [...'hello world']; // ["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]
 ```
 
 #### 8. 对象属性简写
+
 ```js
 const name='小豪';
 const obj = { name };
 ```
 
 #### 9. `Promise`
+
 ```js
 Promise.resolve().then(() => { console.log(2); });
 console.log(1);
@@ -78,6 +87,7 @@ console.log(1);
 ```
 
 #### 10. `let` 和 `const`
+
 ```js
 let name = '小豪';
 const arr = [];
@@ -86,11 +96,13 @@ const arr = [];
 ### ES7（2016）
 
 #### 1. `Array.prototype.includes()`
+
 ```js
 [1].includes(1); // true
 ```
 
 #### 2. 指数操作符
+
 ```js
 2**10; // 1024
 ```
@@ -98,6 +110,7 @@ const arr = [];
 ### ES8（2017）
 
 #### 1. `async` / `await` 异步终极解决方案
+
 ```js
 async getData(){
   const res = await api.getTableData(); // await 异步任务
@@ -106,16 +119,19 @@ async getData(){
 ```
 
 #### 2. `Object.values()`
+
 ```js
 Object.values({a: 1, b: 2, c: 3}); // [1, 2, 3]
 ```
 
 #### 3. `Object.entries()`
+
 ```js
 Object.entries({a: 1, b: 2, c: 3}); // [["a", 1], ["b", 2], ["c", 3]]
 ```
 
 #### 4. String padding
+
 ```js
 // padStart
 'hello'.padStart(10); // "     hello"
@@ -129,6 +145,7 @@ Object.entries({a: 1, b: 2, c: 3}); // [["a", 1], ["b", 2], ["c", 3]]
 > 获取一个对象的所有自身属性的描述符,如果没有任何自身属性，则返回空对象。
 
 #### 7. `SharedArrayBuffer` 对象
+
 ```js
 SharedArrayBuffer 对象用来表示一个通用的，固定长度的原始二进制数据缓冲区，
 /**
@@ -140,6 +157,7 @@ new SharedArrayBuffer(10)
 ```
 
 #### 8. `Atomics` 对象
+
 ```js
 Atomics 对象提供了一组静态方法用来对 SharedArrayBuffer 对象进行原子操作。
 ```
@@ -148,6 +166,7 @@ Atomics 对象提供了一组静态方法用来对 SharedArrayBuffer 对象进�
 
 #### 1. 异步迭代
 > `await` 可以和 `for...of` 循环一起使用，以串行的方式运行异步操作
+
 ```js
 async function process(array) {
   for await (let i of array) {
@@ -157,23 +176,27 @@ async function process(array) {
 ```
 
 #### 2. `Promise.finally()`
+
 ```js
 Promise.resolve().then().catch(e => e).finally();
 ```
 
 #### 3. Rest/Spread 属性
+
 ```js
 const values = [1, 2, 3, 5, 6];
 console.log( Math.max(...values) ); // 6
 ```
 
 #### 4. 正则表达式命名捕获组
+
 ```js
 const reg = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/;
 const match = reg.exec('2021-02-23');
 ```
 
 #### 5. 正则表达式反向断言
+
 ```js
 (?=p)、(?<=p)  p 前面(位置)、p 后面(位置)
 (?!p)、(?<!p>) 除了 p 前面(位置)、除了 p 后面(位置)
@@ -183,6 +206,7 @@ const match = reg.exec('2021-02-23');
 
 #### 6. 正则表达式 `dotAll` 模式
 > 正则表达式中点.匹配除回车外的任何单字符，标记s改变这种行为，允许行终止符的出现
+
 ```js
 /hello.world/.test('hello\nworld'); // false
 ```
@@ -190,6 +214,7 @@ const match = reg.exec('2021-02-23');
 ### ES10（2019）
 
 #### 1. `Array.flat()` 和 `Array.flatMap()`
+
 ```js
 // flat()
 [1, 2, [3, 4]].flat(Infinity); // [1, 2, 3, 4]
@@ -202,6 +227,7 @@ const match = reg.exec('2021-02-23');
 
 #### 3. `String.prototype.matchAll`
 > `matchAll()` 为所有匹配的匹配对象返回一个迭代器
+
 ```js
 const raw_arr = 'test1  test2  test3'.matchAll((/t(e)(st(\d?))/g));
 const arr = [...raw_arr];
@@ -209,12 +235,14 @@ const arr = [...raw_arr];
 
 #### 4. `Symbol.prototype.description`
 > 只读属性，回 `Symbol` 对象的可选描述的字符串。
+
 ```js
 Symbol('description').description; // 'description'
 ```
 
 #### 5. `Object.fromEntries()`
 > 返回一个给定对象自身可枚举属性的键值对数组
+
 ```js
 // 通过 Object.fromEntries， 可以将 Map 转化为 Object:
 const map = new Map([ ['foo', 'bar'], ['baz', 42] ]);
@@ -227,6 +255,7 @@ console.log(Object.fromEntries(map)); // { foo: "bar", baz: 42 }
 
 #### 1. Nullish coalescing Operator(空值处理)
 > 表达式在 `??` 的左侧 运算符求值为 `undefined` 或 `null` ，返回其右侧。
+
 ```js
 let user = {
     u1: 0,
@@ -243,6 +272,7 @@ let u5 = user.u5 ?? '用户5'  // ''
 
 #### 2. Optional chaining（可选链）
 > `?.` 用户检测不确定的中间节点
+
 ```js
 let user = {}
 let u1 = user.childer.name // TypeError: Cannot read property 'name' of undefined
@@ -251,6 +281,7 @@ let u1 = user.childer?.name // undefined
 
 #### 3. Promise.allSettled
 > 返回一个在所有给定的 `promise` 已被决议或被拒绝后决议的 `promise` ，并带有一个对象数组，每个对象表示对应的 `promise` 结果
+
 ```js
 const promise1 = Promise.resolve(3);
 const promise2 = 42;
@@ -278,6 +309,7 @@ Promise.allSettled(promiseList)
 
 #### 1. `replaceAll`
 > 返回一个全新的字符串，所有符合匹配规则的字符都将被替换掉
+
 ```js
 const str = 'hello world';
 str.replaceAll('l', ''); // "heo word"
@@ -285,6 +317,7 @@ str.replaceAll('l', ''); // "heo word"
 
 #### 2. `Promise.any()`
 > `Promise.any()` 接收一个 `Promise` 可迭代对象，只要其中的一个 `promise` 成功，就返回那个已经成功的 `promise` 。如果可迭代对象中没有一个 `promise` 成功（即所有的 `promises` 都失败/拒绝），就返回一个失败的 `promise`
+
 ```js
 const promise1 = new Promise((resolve, reject) => reject('我是失败的Promise_1'));
 const promise2 = new Promise((resolve, reject) => reject('我是失败的Promise_2'));
