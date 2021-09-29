@@ -9,6 +9,7 @@
 ### [SVG LOGO](logo.md) / [git](study/git.md) / [command](study/command.md) / [javascript-questions](study/javascript-questions.md)
 ### [ECMASCRIPT](study/ecmascript.md) / [一行js](study/0001.md) / [javascript常用的方法封裝](study/0002.md)
 ### [帧率测试](frameratetest.html)
+### [国庆红旗头像](avatar-editor)
 
 <div class="urlList"></div>
 
