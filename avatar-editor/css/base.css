@@ -291,7 +291,7 @@ body, html {
   min-height: 100vh;
   max-width: 500px;
   margin: 0 auto;
-  background-image: url(../img/20190829-bg.png);
+  background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: cover
 }
@@ -348,14 +348,14 @@ body, html {
   margin-top: .5rem;
   width: 13.125rem;
   height: 6.3rem;
-  background-image: url(../img/20190906-logo2.png)
+  background-image: url(../img/logo2.png)
 }
 
 .operation-header .h-slogan {
   margin-top: .125rem;
   width: 9.35rem;
   height: 1.05rem;
-  background-image: url(../img/20190906-logo3.png)
+  background-image: url(../img/logo3.png)
 }
 
 .operation-box {
@@ -363,7 +363,7 @@ body, html {
 }
 
 .operation-box .next, .operation-box .prev {
-  background-image: url(../img/20190829-btn.png);
+  background-image: url(../img/btn.png);
   background-size: contain;
   border-radius: 50%;
   width: 2.275rem;
@@ -517,7 +517,7 @@ body, html {
   flex-direction: column;
   width: 12.975rem;
   height: 16.25rem;
-  background-image: url(../img/20190829-longpress.svg);
+  background-image: url(../img/longpress.svg);
   background-size: cover
 }
 
