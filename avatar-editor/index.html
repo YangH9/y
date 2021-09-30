@@ -44,9 +44,7 @@
   <div class="wrapper">
     <img src="" alt="" class="img-load" style="width: 9.5rem; position: fixed; top: 0px; left: -9999px;">
     <div class="operation-header">
-      <div class="h-title">
-
-      </div>
+      <div class="h-title"></div>
     </div>
     <div class="operation-box">
       <a class="prev" onclick="changeHat()"></a>
@@ -65,11 +63,10 @@
       <a class="o-btn2" onclick="exportFunc()" style="display: none;">
       </a>
     </div>
-
     <div class="operation-done">
       <img src="img/act-done-happy.png" alt="" class="act-done-happy">
     </div>
-    <!--     <center>
+    <!-- <center>
       <a href="http://166.im/" target="_blank">黑科技Get</a> |
       <a href="http://166.im/" target="_blank">黑科技Get</a> |
       <a href="http://166.im/" target="_blank">黑科技Get</a>
@@ -77,21 +74,18 @@
   </div>
   <div style="display: none">
     <img id="img" src="" alt="">
-    <img class="hide" id="hat0" src="img/avatar/img0-1.png">
-    <img class="hide" id="hat1" src="img/avatar/img0-2.png">
-    <img class="hide" id="hat2" src="img/avatar/img1.png">
+    <script>
+      let html = ""
+      new Array(15).fill(1).map((item, i) => {
+        html += `<img class="hide" id="hat${i}" src="img/avatar/img${i}.png">`
+      })
+      document.write(html)
+    </script>
+    <!-- <img class="hide" id="hat0" src="img/avatar/img0.png">
+    <img class="hide" id="hat1" src="img/avatar/img1.png">
+    <img class="hide" id="hat2" src="img/avatar/img2.png">
     <img class="hide" id="hat3" src="img/avatar/img2-1.png">
-    <img class="hide" id="hat4" src="img/avatar/img2-2.png">
-    <img class="hide" id="hat5" src="img/avatar/img3-1.png">
-    <img class="hide" id="hat6" src="img/avatar/img3-2.png">
-    <img class="hide" id="hat7" src="img/avatar/img4-1.png">
-    <img class="hide" id="hat8" src="img/avatar/img4-2.png">
-    <img class="hide" id="hat9" src="img/avatar/img5-1.png">
-    <img class="hide" id="hat10" src="img/avatar/img5-2.png">
-    <img class="hide" id="hat11" src="img/avatar/img6-1.png">
-    <img class="hide" id="hat12" src="img/avatar/img6-2.png">
-    <img class="hide" id="hat13" src="img/avatar/img7-1.png">
-    <img class="hide" id="hat14" src="img/avatar/img7-2.png">
+    <img class="hide" id="hat4" src="img/avatar/img2-2.png"> -->
   </div>
   <script src="js/fabric.min.js"></script>
   <script>
@@ -133,7 +127,6 @@
         })
       });
       changeHat();
-
       document.getElementsByClassName("o-btn1")[0].style.display = "none";
       document.getElementsByClassName("o-btn2")[0].style.display = "block";
       //document.getElementById("tip").style.opacity = 1
@@ -170,7 +163,6 @@
     function exportFunc() {
       document.getElementsByClassName("operation-box")[0].style.display = "none";
       document.getElementsByClassName("operation-btns")[0].style.display = "none";
-
       /*document.getElementById("exportBtn").style.display = "none";
       document.getElementById("tip").innerHTML = "长按图片保存或分享";
       document.getElementById("change").style.display = "none";*/
