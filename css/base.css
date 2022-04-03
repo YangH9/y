@@ -1,3 +1,9 @@
+html{
+  -webkit-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
 h1:first-child {
   display: none;
 }
