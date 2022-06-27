@@ -1,4 +1,4 @@
-# JS 语法 ES6、ES7、ES8、ES9、ES10、ES11、ES12新特性
+# JS 语法 ES6、ES7、ES8、ES9、ES10、ES11、ES12、ES13新特性
 
 ### [首页](/)
 
