@@ -338,17 +338,15 @@ Promise.any(promiseList)
 > 逻辑运算符和赋值表达式，新特性结合了逻辑运算符（ `&&` ， `||` ， `??` ）和赋值表达式而JavaScript已存在的 复合赋值运算符有：
 
 ```js
-a ||= b
-//等价于
-a = a || (a = b)
+// 原有
+a = a ?? b;
+a = a && b;
+a = a || b;
 
-a &&= b
-//等价于
-a = a && (a = b)
-
-a ??= b
-//等价于
-a = a ?? (a = b)
+// 新的
+a ??= b;
+a &&= b;
+a ||= b; 
 ```
 
 #### 5. 数字分隔符
@@ -360,4 +358,228 @@ const money = 1_000_000_000;
 const money = 1000000000;
 
 1_000_000_000 === 1000000000; // true
+```
+
+### ES13（2022）
+#### 1.Class Fields
+> Class Public Instance Fields 公共实例字段
+
+```js
+// old
+class Counter {
+  constructor() {
+    this._num = 0
+  }
+}
+
+// new
+class Counter {
+  this._num = 0
+}
+```
+
+> Private Instance Fields 私有实例字段
+```js
+// old
+class Counter {
+  _num = 0
+}
+const counter = new Counter()
+console.log(counter._num) // 0
+
+// new
+class Counter {
+  #num = 0
+}
+const counter = new Counter()
+console.log(counter.#num) // Uncaught SyntaxError: Private field '#num' must be declared in an enclosing class
+```
+
+> Private instance methods and accessors 私有实例方法和访问器
+```js
+class Counter {
+  #num
+  constructor() {
+    console.log(this.#getNum) // undefined
+    this.#initNum = 0
+    console.log(this.#getNum) // 0
+  }
+  get #getNum() {
+    return this.#num
+  }
+  set #initNum(num) {
+    this.#num = num
+  }
+}
+
+const counter = new Counter()
+console.log(counter.#initNum) // Uncaught SyntaxError: Private field '#initNum' must be declared in an enclosing class
+```
+
+> Static class fields and methods 静态公共字段和方法
+```js
+class Counter {
+  #num = 0
+  static baseNum = 100
+  // 静态方法可以通过 this 访问静态字段
+  static getDoubleBaseNum() {
+    return this.baseNum * 2
+  }
+}
+// 静态字段和方法通过类本身访问
+console.log(Counter.baseNum) // 100
+console.log(Counter.getDoubleBaseNum()) // 200
+
+// 实例不能访问静态字段和方法
+const counter = new Counter()
+console.log(counter.baseNum) // undefined
+```
+
+> Private static class fields and methods 静态私有字段和方法
+```js
+class Counter {
+  #num = 0
+  static #baseNum = 100
+  static getDoubleBaseNum() {
+    return this.#baseNum * 2
+  }
+  getBaseNum() {
+    return Counter.#baseNum
+  }
+}
+
+// 私有静态字段不能被直接访问
+console.log(Counter.#baseNum) // Uncaught SyntaxError: Private field '#baseNum' must be declared in an enclosing class
+// 同类静态方法可以访问私有静态字段
+console.log(Counter.getDoubleBaseNum()) // 200
+
+// 实例可以访问同类下的私有静态字段和方法
+const counter = new Counter()
+console.log(counter.getBaseNum()) // 100
+```
+
+#### 2. RegExp Match Indices 正则表达式匹配索引
+
+```js
+const re1 = /e+(l)?/d
+const s1 = "hello world"
+const m1 = re1.exec(s1)
+// 结果中记录匹配结果的起始位置
+console.log(m1.indices[0]) // [1, 3]
+console.log(s1.slice(...m1.indices[0])) // 'el'
+// 可以使用 hasIndices 判断是否使用 d 标识符
+console.log(re1.hasIndices) // true
+```
+
+#### 3. 顶层 await
+> 可以直接使用的await
+```js
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+console.log('请等待...')
+// 使用 顶层 await
+// 需要 esmodule
+await sleep(2000)
+console.log('开始执行')
+```
+
+#### 4. Ergonomic brand checks for Private Fields 私有字段检查 in关键字
+> 主要是检测一个对象或实例是否存在私有字段或方法：
+```js
+class C {
+  #brand
+  #method() {}
+  get #getter() {}
+  static isC(obj) {
+    return #brand in obj && #method in obj && #getter in obj
+  }
+}
+const c = new C()
+console.log(C.isC(c)) // true
+console.log(C.isC({})) // false
+```
+
+#### 5. .at() 可索引对象的 at 方法
+```js
+// Array
+const array = ['a', 'b', 1]
+console.log(array[array.length - 1]) // 1
+console.log(array.at(-1)) // 1 支持负数索引
+
+// String
+const string = 'abc'
+console.log(string[string.length - 1]) // 'c'
+console.log(string.at(-1)) // 'c' 支持负数索引
+```
+
+#### 6. Accessible Object.hasOwn
+> 获取对象内是否含有某属性、方法（属于自己的，非继承）
+```js
+function Fun(name){ this.name = name }
+Fun.prototype.fun = function(){
+  console.log(this.name)
+}
+const fun = new Fun('name2')
+// old
+console.log(fun.hasOwnProperty('name')) // true
+console.log(fun.hasOwnProperty('fun')) // false
+// new
+console.log(Object.hasOwn(fun,'name')) // true
+console.log(Object.hasOwn(fun,'fun')) // false
+
+const notPrototype = Object.create(null)
+console.log(Object.hasOwn(notPrototype, 'name')) // false
+console.log(notPrototype.hasOwnProperty('name')) // Uncaught TypeError: notPrototype.hasOwnProperty is not a function
+```
+
+#### 7. Class Static Block
+```js
+let getDemo, setDemo
+class A {
+  static a1 = 'a1'
+  static a2
+  #demo = 'demo'
+  static {
+    // 给静态属性赋值
+    A.a2 = 'a2'
+    // 访问私有属性（赋值给外部变量）
+    getDemo = (obj) => obj.#demo
+    // 设置私有属性（赋值给外部变量）
+    setDemo = (obj, value) => (obj.#demo = value)
+  }
+}
+console.log(A.a1) // a1
+console.log(A.a2) // a2
+const a = new A()
+console.log(getDemo(a)) // demo
+setDemo(a, 'new  demo')
+console.log(getDemo(a)) // 'new  demo'
+class B extends A {
+  static {
+    // 访问父类的属性或方法
+    console.log(super.a2) // a2
+  }
+}
+```
+
+#### 8. Error Cause
+> 新特性是在 Error 构造函数上添加一个附加选项参数 cause，其值将作为属性分配给错误实例。这样我们可以在后续处理中拿到原始的错误信息，而不是只有个 message。
+```js
+function fetchDemo(url) {
+  return Promise.reject(`${url} 错误`).catch((err) => {
+    throw new Error(err, {
+      cause: err,
+    })
+  })
+}
+(async () => {
+  try {
+    await fetchDemo('http://www.')
+  } catch (error) {
+    console.log(error)
+    // 获取真实的错误信息
+    console.log(error.cause)
+  }
+})()
 ```
