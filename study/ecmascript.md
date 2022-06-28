@@ -379,6 +379,7 @@ class Counter {
 ```
 
 > Private Instance Fields 私有实例字段
+
 ```js
 // old
 class Counter {
@@ -396,6 +397,7 @@ console.log(counter.#num) // Uncaught SyntaxError: Private field '#num' must be 
 ```
 
 > Private instance methods and accessors 私有实例方法和访问器
+
 ```js
 class Counter {
   #num
@@ -417,6 +419,7 @@ console.log(counter.#initNum) // Uncaught SyntaxError: Private field '#initNum' 
 ```
 
 > Static class fields and methods 静态公共字段和方法
+
 ```js
 class Counter {
   #num = 0
@@ -436,6 +439,7 @@ console.log(counter.baseNum) // undefined
 ```
 
 > Private static class fields and methods 静态私有字段和方法
+
 ```js
 class Counter {
   #num = 0
@@ -473,6 +477,7 @@ console.log(re1.hasIndices) // true
 
 #### 3. 顶层 await
 > 可以直接使用的await
+
 ```js
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
@@ -486,6 +491,7 @@ console.log('开始执行')
 
 #### 4. Ergonomic brand checks for Private Fields 私有字段检查 in关键字
 > 主要是检测一个对象或实例是否存在私有字段或方法：
+
 ```js
 class C {
   #brand
@@ -515,6 +521,7 @@ console.log(string.at(-1)) // 'c' 支持负数索引
 
 #### 6. Accessible Object.hasOwn
 > 获取对象内是否含有某属性、方法（属于自己的，非继承）
+
 ```js
 function Fun(name){ this.name = name }
 Fun.prototype.fun = function(){
@@ -565,6 +572,7 @@ class B extends A {
 
 #### 8. Error Cause
 > 新特性是在 Error 构造函数上添加一个附加选项参数 cause，其值将作为属性分配给错误实例。这样我们可以在后续处理中拿到原始的错误信息，而不是只有个 message。
+
 ```js
 function fetchDemo(url) {
   return Promise.reject(`${url} 错误`).catch((err) => {
