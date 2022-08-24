@@ -2,6 +2,8 @@
 
 ### [首页](/)
 
+[正则基础知识](reg.md)
+
 <meta name="referrer" content="never" />
 <meta name="keywords" content="常用的25种正则" />
 <meta name="description" content="常用的25种正则" />
