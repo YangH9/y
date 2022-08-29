@@ -11,6 +11,7 @@
 ### [正则基础知识](study/reg.md) / [常用的正则表达式](study/reg1.md)
 ### [帧率测试](frameratetest.html) / [动画](vsbm.html) / [动画1](vsbm1.html)
 ### [国庆红旗头像](avatar-editor)
+### [摸头生成器](petpet)
 
 <svg width="40px" height="40px" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
   <circle cx="22" cy="22" r="20" fill="none" stroke="#359dda" stroke-width="4">
