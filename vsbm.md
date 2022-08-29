@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="user-scalable=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>volumeshader_bm</title>
     <style>
       body {
@@ -41,7 +41,7 @@
         <span>不支持canvas浏览器</span>
       </canvas>
     </div>
-    <button id="btn">CONFIG</button>
+    <!-- <button id="btn">CONFIG</button> -->
     <div id="config">
       <textarea name="" id="kernel" cols="30" rows="10"></textarea>
       <br />
@@ -49,7 +49,13 @@
       <button id="cancle">CANCLE</button>
     </div>
     <script>
-      alert('created by Admin_12306@bilibili')
+      document.addEventLisener(
+        'touchmove',
+        e => {
+          e.preventDefault()
+        },
+        false
+      )
       var cx, cy
       var glposition
       var glright
