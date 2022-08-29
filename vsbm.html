@@ -47,6 +47,27 @@
       <button id="apply">APPLY</button>
       <button id="cancle">CANCLE</button>
     </div>
+    <div style="position: absolute;right: 10px;text-align:center;font-size: 32px;color: #fff;">Your FPS: <span id="p-ft-i">0</span></div>
+    <script>
+      let ftCount = 0
+      let ftOut = false
+      const ftIndicator = document.querySelector('#p-ft-i')
+      const doStart = () => {
+        requestAnimationFrame(() => {
+          ftCount++
+          if (ftOut) {
+            ftIndicator.innerText = ftCount
+            ftCount = 0
+            ftOut = false
+          }
+          doStart()
+        })
+      }
+      doStart()
+      setInterval(() => {
+        ftOut = true
+      }, 1000)
+    </script>
     <script>
       var cx, cy
       var glposition
