@@ -429,7 +429,7 @@ const g = { ...DEFAULTS };
       (e) => {
         console.error("Error loading image", e);
         $preview.classList.add("error");
-        $("#uploadError").innerText = "could not load the image!";
+        $("#uploadError").innerText = "图片加载失败！";
       }
     );
 
