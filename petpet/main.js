@@ -46,7 +46,7 @@ const g = { ...DEFAULTS };
   const truncateStr = (str, len) =>
     str.length < len
       ? str
-      : `${str.substr(0, ~~(len / 2))}鈰�${str.substr(str.length - ~~(len / 2), str.length)}`;
+      : `${str.substr(0, ~~(len / 2))}⋯${str.substr(str.length - ~~(len / 2), str.length)}`;
 
   /**
    * Loads and scales an image to a set size to improve performance
