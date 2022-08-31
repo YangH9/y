@@ -61,7 +61,7 @@ const g = { ...DEFAULTS };
     let dataURLCache = "";
     const image = new Image();
     // Allow loading external images into the canvas
-    image.crossOrigin = "Anonymous";
+    image.crossOrigin = "";
 
     // scale image and convert to base64 on load. *probably* helps with performance
     image.onload = () => {
@@ -417,7 +417,7 @@ const g = { ...DEFAULTS };
     const $canvas = $("#canvas");
     const $preview = $("#uploadPreview");
     const $hand = new Image();
-    $hand.crossOrigin = "Anonymous";
+    $hand.crossOrigin = "";
     const animation = PetPetAnimation($canvas, $hand, $preview);
     const imageLoader = ImageLoader(
       /** Image load listener */
