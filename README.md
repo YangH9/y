@@ -74,6 +74,7 @@
 * [<img src="favicon/jsdelivr.ico">jsdelivr](https://www.jsdelivr.com "jsdelivr")
 * [<img src="favicon/codepen.ico">CodePen](https://codepen.io "CodePen")
 * [<img src="favicon/postman.ico">Postman](https://www.postman.com "Postman")
+* [<img src="https://rxjs.dev/assets/images/favicons/favicon.ico">RxJS](https://rxjs.dev/ "RxJS")
 
 #### 云服务
 * [<img src="favicon/github.ico">GitHub](https://github.com "GitHub")
