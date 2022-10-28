@@ -70,7 +70,7 @@
 * [<img src="favicon/videojs.ico">Video.js](https://videojs.com "Video.js")
 * [<img src="favicon/swiperjs.png">Swiper](https://swiperjs.com "Swiper")
 * [<img src="favicon/tweenmax.ico">TweenMax中文网](https://www.tweenmax.com.cn "TweenMax中文网")
-* [<img src="favicon/dartcn.png">Dart 编程语言中文网](https://www.dartcn.com "Dart 编程语言中文网")
+* [<img src="favicon/dartcn.png">Dart](https://dart.dev/ "Dart")
 * [<img src="favicon/jsdelivr.ico">jsdelivr](https://www.jsdelivr.com "jsdelivr")
 * [<img src="favicon/codepen.ico">CodePen](https://codepen.io "CodePen")
 * [<img src="favicon/postman.ico">Postman](https://www.postman.com "Postman")
