@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="css/base.css">
 
+### [首页](/)
+
 ### 查看源
 
 ``` sh
