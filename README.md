@@ -7,6 +7,7 @@
 
 ### [html标签基础、css基础内容](study/html.md) / [入门级基础知识](study/入门级基础知识.md)
 ### [SVG LOGO](logo.md) / [git](study/git.md) / [command](study/command.md) / [javascript-questions](study/javascript-questions.md)
+### [npm配置](npm.md)
 ### [ECMASCRIPT](study/ecmascript.md) / [一行js](study/0001.md) / [javascript常用的方法封裝](study/0002.md)
 ### [正则基础知识](study/reg.md) / [常用的正则表达式](study/reg1.md)
 ### [帧率测试](frameratetest.html) / [动画](vsbm.html) / [动画1](vsbm1.html)
