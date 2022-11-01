@@ -1,8 +1,15 @@
-## npm镜像相关操
+## npm
 
 <link rel="stylesheet" href="css/base.css">
 
 ### [首页](/)
+
+### 高级权限执行
+
+``` sh
+sudo ……
+# 例：sudo npm i
+```
 
 ### 查看源
 
