@@ -44,5 +44,114 @@
           "<div class='pieces black'>" + black_names[i] + "</div>"
         );
     </script>
+    <svg
+      width="600px"
+      viewBox="-6,-6,92,102"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <path
+          id="mark-right"
+          stroke="brown"
+          stroke-width="0.4"
+          fill="none"
+          d="M1,-2.8v1.8h1.8M1,2.8v-1.8h1.8"
+        />
+        <path
+          id="mark-left"
+          stroke="brown"
+          stroke-width="0.4"
+          fill="none"
+          d="M-1,-2.8v1.8h-1.8M-1,2.8v-1.8h-1.8"
+        />
+        <path
+          id="mark"
+          stroke="brown"
+          stroke-width="0.4"
+          fill="none"
+          d="M1,-2.8v1.8h1.8M1,2.8v-1.8h1.8M-1,-2.8v1.8h-1.8M-1,2.8v-1.8h-1.8"
+        />
+        <radialGradient id="shadow">
+          <stop offset="90%" stop-color="#333333" stop-opacity="0.33" />
+          <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+        </radialGradient>
+        <g id="piece-black">
+          <circle r="4.55" cx="0.1" cy="0.3" fill="url(#shadow)" />
+          <circle r="4.4" fill="#765031" />
+          <circle r="4.3" fill="url(#linear-black)" />
+          <circle r="3.8" fill="#443322" />
+        </g>
+        <g id="piece-red">
+          <circle r="4.55" cx="0.1" cy="0.3" fill="url(#shadow)" />
+          <circle r="4.4" fill="#ca5f36" />
+          <circle r="4.3" fill="url(#linear-red)" />
+          <circle r="3.8" fill="#ee2211" />
+        </g>
+      </defs>
+      <path
+        stroke="brown"
+        stroke-width="0.5"
+        fill="none"
+        d="M0,0h80v90h-80zM0,10h80M0,20h80M0,30h80M0,40h80M0,50h80M0,60h80M0,70h80M0,80h80M10,0v40M20,0v40M30,0v40M40,0v40M50,0v40M60,0v40M70,0v40M10,50v40M20,50v40M30,50v40M40,50v40M50,50v40M60,50v40M70,50v40M30,0l20,20M50,0l-20,20M30,70l20,20M50,70l-20,20"
+      />
+      <use xlink:href="#mark" x="10" y="20" />
+      <use xlink:href="#mark" x="70" y="20" />
+      <use xlink:href="#mark-right" x="0" y="30" />
+      <use xlink:href="#mark" x="20" y="30" />
+      <use xlink:href="#mark" x="40" y="30" />
+      <use xlink:href="#mark" x="60" y="30" />
+      <use xlink:href="#mark-left" x="80" y="30" />
+      <use xlink:href="#mark-right" x="0" y="60" />
+      <use xlink:href="#mark" x="20" y="60" />
+      <use xlink:href="#mark" x="40" y="60" />
+      <use xlink:href="#mark" x="60" y="60" />
+      <use xlink:href="#mark-left" x="80" y="60" />
+      <use xlink:href="#mark" x="10" y="70" />
+      <use xlink:href="#mark" x="70" y="70" />
+      <text
+        x="30"
+        y="45"
+        text-anchor="end"
+        alignment-baseline="central"
+        fill="brown"
+        font-size="6"
+      >
+        楚河
+      </text>
+      <text
+        x="50"
+        y="45"
+        text-anchor="start"
+        alignment-baseline="central"
+        fill="brown"
+        font-size="6"
+      >
+        漢界
+      </text>
+      <use xlink:href="#piece-red" x="40" y="90" />
+      <text
+        x="40"
+        y="90"
+        font-size="5"
+        fill="white"
+        text-anchor="middle"
+        alignment-baseline="central"
+        font-family="LiShu"
+      >
+        帥
+      </text>
+      <use xlink:href="#piece-black" x="40" y="0" />
+      <text
+        x="40"
+        y="0"
+        font-size="5"
+        fill="white"
+        text-anchor="middle"
+        alignment-baseline="central"
+        font-family="LiShu"
+      >
+        將
+      </text>
+    </svg>
   </body>
 </html>
