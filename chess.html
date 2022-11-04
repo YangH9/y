@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>象棋素材</title>
+    <style>
+      .pieces {
+        width: 84px;
+        height: 84px;
+        border-radius: 50px;
+        border: rgb(78, 56, 23) double 8px;
+        background-color: rgb(192, 149, 106);
+        margin: auto;
+        text-align: center;
+        font: 77px "楷体";
+        line-height: 84px;
+        text-shadow: 0px 0px 2px white;
+        box-shadow: 3px 3px 2px black;
+        float: left;
+        margin: 10px;
+      }
+      .red {
+        color: rgb(144, 11, 11);
+        border-color: rgb(144, 11, 11);
+      }
+      .black {
+        color: rgb(78, 56, 23);
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var red_names = ["車", "馬", "炮", "帥", "仕", "相", "兵"];
+      var black_names = ["车", "馬", "炮", "將", "士", "象", "卒"];
+      for (var i = 0; i < red_names.length; ++i)
+        document.write("<div class='pieces red'>" + red_names[i] + "</div>");
+      for (var i = 0; i < black_names.length; ++i)
+        document.write(
+          "<div class='pieces black'>" + black_names[i] + "</div>"
+        );
+    </script>
+  </body>
+</html>
