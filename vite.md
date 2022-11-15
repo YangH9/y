@@ -13,6 +13,7 @@ npm i vite-plugin-compression -D
 ##### 使用
 
 - vite.config.js 中的配置插件
+
 ``` js
 import viteCompression from 'vite-plugin-compression';
 
@@ -35,7 +36,6 @@ export default defineConfig({
 | deleteOriginFile | `boolean` | - | 压缩后是否删除源文件 |
 
 [vite-plugin-compression](https://github.com/vbenjs/vite-plugin-compression)
-
 
 ### vite-plugin-style-import 按需导入样式
 
