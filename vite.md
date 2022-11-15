@@ -1,5 +1,7 @@
 ## vue vite-plugin 常用的插件
 
+### [首页](/)
+
 <link rel="stylesheet" href="css/base.css">
 
 ### vite-plugin-compression 开启gzip压缩
