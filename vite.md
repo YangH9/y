@@ -39,6 +39,10 @@ export default defineConfig({
 
 [vite-plugin-compression](https://github.com/vbenjs/vite-plugin-compression)
 
+### vite-plugin-html
+
+[vite-plugin-html](https://github.com/vbenjs/vite-plugin-html)
+
 ### vite-plugin-style-import 按需导入样式
 
 ##### 安装
