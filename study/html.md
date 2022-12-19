@@ -1,6 +1,6 @@
 # html标签基础、css基础内容
 
-### [首页](/)
+### [首页](/y/)
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="html标签基础,css基础内容" />

@@ -1,6 +1,6 @@
 # JS 语法 ES6、ES7、ES8、ES9、ES10、ES11、ES12、ES13新特性
 
-### [首页](/)
+### [首页](/y/)
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="语法 ES6、ES7、ES8、ES9、ES10、ES11、ES12新特性" />

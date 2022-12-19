@@ -1,6 +1,6 @@
 # 常用命令汇总
 
-### [首页](/)
+### [首页](/y/)
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="常用命令汇总" />

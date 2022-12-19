@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="css/base.css">
 
-### [首页](/)
+### [首页](/y/)
 
 ### 高级权限执行
 
