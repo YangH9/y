@@ -11,6 +11,13 @@ sudo ……
 # 例：sudo npm i
 ```
 
+### 忽略版本冲突安装依赖
+
+``` sh
+npm install --legacy-peer-deps
+npm install [包名] --legacy-peer-deps
+```
+
 ### 查看源
 
 ``` sh
