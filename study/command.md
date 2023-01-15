@@ -1,6 +1,6 @@
 # 常用命令汇总
 
-### [首页](/y/)
+### [首页](/)
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="常用命令汇总" />
@@ -247,6 +247,7 @@ Apple 键盘上的某些按键具有特殊符号和功能，例如显示屏亮�
 * **Option-Command-P**: 隐藏或显示“访达”窗口中的路径栏。
 * **Option-Command-S**: 隐藏或显示“访达”窗口中的边栏。
 * **Command–斜线 (/)**: 隐藏或显示“访达”窗口中的状态栏。
+* **Command–句号 (.)**: 隐藏或显示隐藏的文件文件夹。
 * **Command-J**: 显示“显示”选项。
 * **Command-K**: 打开“连接服务器”窗口。
 * **Control-Command-A**: 为所选项制作替身。
