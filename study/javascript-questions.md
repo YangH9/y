@@ -1,6 +1,6 @@
 # JavaScript 进阶问题列表
 
-### [首页](/) / [其他语言](/javascript-questions)
+### [首页](/y/) / [其他语言](/javascript-questions)
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="进阶问题列表" />

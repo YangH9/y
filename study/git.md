@@ -1,6 +1,6 @@
 # Git常用命令
 
-### [首页](/)
+### [首页](/y/)
 
 <meta name="referrer" content="never" />
 <meta name="keywords" content="Git常用命令" />

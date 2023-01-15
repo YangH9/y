@@ -1,6 +1,6 @@
 ## 帧率测试
 
-### [首页](/)
+### [首页](/y/)
 
 <link rel="stylesheet" href="css/base.css">
 
