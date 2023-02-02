@@ -7,7 +7,7 @@
 <meta name="description" content="Markdown" />
 <link rel="stylesheet" href="../css/base.css">
 
-#### 段落
+### 段落
 
 > 常规文本
 
@@ -18,7 +18,7 @@
 
 ---
 
-#### 标题
+### 标题
 
 > 有6种标题变体。符号 "#" 的数量，以及后面的文字，表明标题的重要性。
 
@@ -40,7 +40,7 @@
 
 ---
 
-#### 强调
+### 强调
 
 > 修改文本是如此整洁和容易。你可以让你的文字变成粗体、斜体、删除线、高亮、下标或上标。
 
@@ -55,16 +55,67 @@
 ``` <u>下划线</u> ``` | <u>下划线</u>
 ``` <small>小号字体</small> ``` | <small>小号字体</small>
 ``` <big>大号字体</big> ``` | <big>大号字体</big>
-``` 文本^上标^ ``` | 文本^上标^
-``` 文本~下标~ ``` | 文本~下标~
+``` 文本<sup>上标</sup> ``` | 文本<sup>上标</sup>
+``` 文本<sub>下标</sub> ``` | 文本<sub>下标</sub>
 ``` <mark>文本高亮<mark> ``` | <mark>文本高亮<mark>
 
 ---
 
-#### 引用
+### 引用
 
 ``` md
 > 引用
 ```
 
 > 引用
+
+---
+
+### 图片
+
+``` md
+![error text](url 'hover text')
+```
+
+![error text](/y/favicon.ico 'hover text')
+![error text](logo)
+
+---
+
+### 链接
+
+``` md
+[link text](url)
+```
+
+[link text](url)
+
+[yangh9.github.io](/)
+
+---
+
+### 代码
+
+<code>
+[link text](url)
+</code>
+
+[link text](url)
+
+[yangh9.github.io](/)
+
+---
+
+### 公式块
+
+``` md
+$$
+下标 ：θ_1 ，上标 ：θ^2
+$$
+```
+
+$$
+下标 ：θ_1 ，上标 ：θ^2
+$$
+
+---
