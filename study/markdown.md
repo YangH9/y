@@ -2,6 +2,8 @@
 
 ### [首页](/y/)
 
+### [emoji](/y/emoji.md)
+
 <meta name="referrer" content="never" />
 <meta name="keywords" content="Markdown" />
 <meta name="description" content="Markdown" />
@@ -14,6 +16,7 @@
 ``` md
 段落
 ```
+
 段落
 
 ---
