@@ -11,7 +11,6 @@
 ### [ECMASCRIPT](study/ecmascript.md) / [一行js](study/0001.md) / [javascript常用的方法封裝](study/0002.md)
 ### [正则基础知识](study/reg.md) / [常用的正则表达式](study/reg1.md)
 ### [markdown](study/markdown.md)
-### [emoji](emoji.md)
 ### [帧率测试](frameratetest.html) / [动画](vsbm.html) / [动画1](vsbm1.html)
 ### [国庆红旗头像](/avatar-editor)
 ### [摸头生成器](/petpet)
