@@ -96,13 +96,17 @@
 
 ### 代码
 
-<code>
-[link text](url)
-</code>
+<pre>
+``` js
+const helloWorld = 'Hello world'
+console.log(helloWorld)
+```
+</pre>
 
-[link text](url)
-
-[yangh9.github.io](/)
+``` js
+const helloWorld = 'Hello world'
+console.log(helloWorld)
+```
 
 ---
 
