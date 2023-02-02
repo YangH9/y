@@ -195,5 +195,7 @@ $$下标 ：θ_1 ，上标 ：θ^2$$
 
 $$\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.$$
 
+$$\left(\frac{x}{y}\right)$$
+
 
 ---
