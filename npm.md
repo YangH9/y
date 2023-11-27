@@ -51,3 +51,29 @@ npm install [包名] --registry=<url>
 npm config set registry <url>
 # 例：npm config set registry https://registry.npm.taobao.org
 ```
+
+#### 更新npm包
+
+> 安装插件
+
+``` sh
+npm install -g npm-check
+```
+
+> 检查package.json中所有可更新的包
+
+``` sh
+npm-check
+```
+
+> 更新所有依赖到新版本
+
+``` sh
+npm-check -u // 注意，更新的只是package.json下依赖的版本号
+```
+
+> 重新npm
+
+``` sh
+npm install   // 要是不放心，可以先把所有包删除，再重新npm install
+```
