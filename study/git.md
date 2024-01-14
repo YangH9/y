@@ -224,9 +224,9 @@ Ref 'refs/heads/master' was rewritten
 > 另一个常见的情形是在你开始工作时忘记运行 git config 来设置你的名字与邮箱地址， 或者你想要开源一个项目并且修改所有你的工作邮箱地址为你的个人邮箱地址。 任何情形下，你也可以通过 filter-branch 来一次性修改多个提交中的邮箱地址。 需要小心的是只修改你自己的邮箱地址，所以你使用 --commit-filter：
 
 ```
-git filter-branch -f --commit-filter 'GIT_AUTHOR_NAME="Scott Chacon"; GIT_AUTHOR_EMAIL="schacon@example.com"; git commit-tree "$@"' HEAD
-```
-```
+# 修改全部
+$ git filter-branch -f --commit-filter 'GIT_AUTHOR_NAME="Scott Chacon"; GIT_AUTHOR_EMAIL="schacon@example.com"; git commit-tree "$@"' HEAD
+# 修改匹配项
 $ git filter-branch --commit-filter '
         if [ "$GIT_AUTHOR_EMAIL" = "schacon@localhost" ];
         then
