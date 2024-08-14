@@ -27,14 +27,66 @@
 
       // 成员数据，姓名、地区、学校
       const memberData = [
-        { name: '张三', province: '北京', school: '北京大学' },
-        { name: '李四', province: '上海', school: '复旦大学' },
-        { name: '王五', province: '广东', school: '中山大学' },
-        { name: '赵六', province: '深圳', school: '深圳大学' },
-        { name: '田七', province: '杭州', school: '浙江大学' },
-        { name: '孙八', province: '天津', school: '天津大学' },
-        { name: '周九', province: '重庆', school: '西南大学' },
-        { name: '吴十', province: '广东', school: '上海大学' }
+        { name: '于成凯', province: '河南', school: '河南师范大学' },
+        { name: '刘兴', province: '河南', school: '河南师范大学' },
+        { name: '薛奕康', province: '河南', school: '河南师范大学' },
+        { name: '杨华宇', province: '河南', school: '河南农业大学' },
+        { name: '杨天豪', province: '河南', school: '洛阳理工学院' },
+        { name: '齐奥宇', province: '河南', school: '河南工程学院' },
+        { name: '黄俊丰', province: '河南', school: '河南工程学院' },
+        { name: '张佳洺', province: '河南', school: '新乡学院' },
+        { name: '程元旭', province: '河南', school: '新乡工程学院' },
+        { name: '陶宇飞', province: '河南', school: '新乡工程学院' },
+        { name: '李丞成', province: '河南', school: '新乡工程学院' },
+        { name: '郑佳钦', province: '河南', school: '南阳理工学院' },
+        { name: '刘旭腾', province: '河南', school: '新乡医学院' },
+        { name: '余沛炯', province: '河南', school: '河南体育学院' },
+        { name: '马英浩', province: '河南', school: '安阳学院' },
+        { name: '魏雪斌', province: '河南', school: '安阳学院' },
+        { name: '刘文韬', province: '河南', school: '信阳学院' },
+        { name: '齐博文', province: '河南', school: '信阳学院' },
+        { name: '池银旭', province: '河南', school: '焦作大学' },
+        { name: '张丛银', province: '河南', school: '焦作大学' },
+        { name: '薛鹏程', province: '河南', school: '郑州科技学院' },
+        { name: '朱贝贝', province: '河南', school: '商丘工学院' },
+        { name: '程轩昂', province: '河南', school: '郑州经贸学院' },
+        { name: '李涵叡', province: '河南', school: '郑州经贸学院' },
+        { name: '高志延', province: '河南', school: '郑州商学院' },
+        { name: '张帅', province: '河南', school: '郑州西亚斯学院' },
+        { name: '张成龙', province: '河南', school: '郑州西亚斯学院' },
+        { name: '赵鹏飞', province: '河南', school: '郑州工业应用技术学院' },
+        { name: '晏绍伦', province: '河南', school: '黄河水利职业技术学院' },
+        { name: '程志远', province: '河南', school: '郑州航空工业管理学院' },
+        { name: '冯耀(定向士官)', province: '河南', school: '河南交通职业技术学院' },
+        { name: '孙浩先', province: '河南', school: '郑州工业应用技术学院' },
+        { name: '姚寓孔', province: '河南', school: '郑州电力高等专科学校' },
+        { name: '高佳旭', province: '河南', school: '周口职业技术学院' },
+        { name: '刘梦怡', province: '河南', school: '河南信息统计职业学院' },
+        { name: '万雪婷', province: '河南', school: '南阳医学高等专科学校' },
+        { name: '马祖壮', province: '河南', school: '南阳医学高等专科学校' },
+        { name: '白伊伦', province: '河南', school: '南阳农业职业学院' },
+        { name: '杨锟', province: '湖北', school: '长江大学' },
+        { name: '耿照昂', province: '湖北', school: '湖北经济学院' },
+        { name: '吕文凯', province: '湖北', school: '湖北汽车工业学院' },
+        { name: '张苗(定向士官)', province: '湖北', school: '湖北交通职业技术学院' },
+        { name: '赵衡', province: '江苏', school: '金陵科技学院' },
+        { name: '彭雅松', province: '福建', school: '厦门华厦学院' },
+        { name: '丁晓帆', province: '广西', school: '桂林学院' },
+        { name: '李闯', province: '广西', school: '广西电力职业技术学院' },
+        { name: '梅璇', province: '吉林', school: '吉林师范大学' },
+        { name: '马习馨', province: '吉林', school: '吉林外国语大学' },
+        { name: '李晨阳', province: '吉林', school: '吉林工程技术师范学院' },
+        { name: '杨婉雪', province: '吉林', school: '长春财经学院' },
+        { name: '薛晓冰', province: '重庆', school: '重庆旅游职业学院' },
+        { name: '于松', province: '宁夏', school: '宁夏师范大学' },
+        { name: '刘一鸣', province: '辽宁', school: '沈阳农业大学' },
+        { name: '刘靖博', province: '辽宁', school: '辽宁科技学院' },
+        { name: '周子琦', province: '北京', school: '北京邮电大学世纪学院' },
+        { name: '樊浩宇', province: '山西', school: '山西工学院' },
+        { name: '胡伟康', province: '贵州', school: '六盘水师范学院' },
+        { name: '李晓锐', province: '海南', school: '海南科技职业大学' },
+        { name: '王达飞', province: '新疆', school: '喀什大学' },
+        { name: '王梦', province: '广东', school: '广东财贸职业学院' }
       ]
 
       // 省份数据
@@ -75,7 +127,6 @@
         '澳门',
         '南海诸岛'
       ]
-
       // 地图数据
       const mapData = provinceData.map(name => {
         const list = memberData.filter(i => i.province === name)
@@ -89,12 +140,20 @@
       // 指定图表的配置项和数据
       const option = {
         backgroundColor: '#00005a',
-        title: {
-          text: '2024高考录取城市统计',
-          left: 'center',
-          textStyle: { fontSize: 30, color: '#f0f0ff' },
-          top: 20
-        },
+        title: [
+          {
+            text: '2024高考录取城市统计',
+            left: 'center',
+            textStyle: { fontSize: 30, color: '#f0f0ff' },
+            top: 20
+          },
+          {
+            subtext: '班主任：张伟虎\n任课老师：语文：杨勇\n数学：朱海学\n日语：仲雅青、贾谭\n物理：张华\n化学：张伟虎\n生物：朱向克',
+            left: 'center',
+            subtextStyle: { fontSize: 30, color: '#f0f0ff' },
+            top: 20
+          }
+        ],
         tooltip: { formatter: params => `${params.name} ${params.value}人<br>${params.data.list.map(i => `${i.name}——${i.school}`).join('<br>')}` },
         label: {
           color: '#f0f0ff',
