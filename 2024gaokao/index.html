@@ -23,7 +23,7 @@
   <body>
     <div id="main"></div>
     <script type="text/javascript">
-      const myChart = echarts.init(document.getElementById('main'))
+      const myChart = echarts.init(document.querySelector('#main'))
 
       // 成员数据，姓名、地区、学校
       const memberData = [
@@ -101,6 +101,7 @@
           formatter: params => (params.value ? `${params.name} ${params.value}人` : params.name)
           // formatter: params => (params.value ? `${params.name} ${params.value}人\n${params.data.list.map(i => `${i.name}`).join('\n')}` : params.name),
         },
+        toolbox: { feature: { saveAsImage: { show: true } }, iconStyle: { borderColor: '#f0f0ff', borderWidth: 2 }, top: 20, right: 20 },
         visualMap: {
           min: 0,
           max: Math.max(...mapData.map(item => item.value)),
