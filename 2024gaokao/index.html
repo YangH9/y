@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>2024高考录取城市统计</title>
+    <script src="../js/echarts.js"></script>
+    <script src="../js/map/js/china.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body,
+      #main {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type="text/javascript">
+      const myChart = echarts.init(document.getElementById('main'))
+
+      // 成员数据，姓名、地区、学校
+      const memberData = [
+        { name: '张三', province: '北京', school: '北京大学' },
+        { name: '李四', province: '上海', school: '复旦大学' },
+        { name: '王五', province: '广东', school: '中山大学' },
+        { name: '赵六', province: '深圳', school: '深圳大学' },
+        { name: '田七', province: '杭州', school: '浙江大学' },
+        { name: '孙八', province: '天津', school: '天津大学' },
+        { name: '周九', province: '重庆', school: '西南大学' },
+        { name: '吴十', province: '广东', school: '上海大学' }
+      ]
+
+      // 省份数据
+      const provinceData = [
+        '北京',
+        '天津',
+        '河北',
+        '山西',
+        '内蒙古',
+        '辽宁',
+        '吉林',
+        '黑龙江',
+        '上海',
+        '江苏',
+        '浙江',
+        '安徽',
+        '福建',
+        '江西',
+        '山东',
+        '河南',
+        '湖北',
+        '湖南',
+        '广东',
+        '广西',
+        '海南',
+        '重庆',
+        '四川',
+        '贵州',
+        '云南',
+        '西藏',
+        '陕西',
+        '甘肃',
+        '青海',
+        '宁夏',
+        '新疆',
+        '台湾',
+        '香港',
+        '澳门',
+        '南海诸岛'
+      ]
+
+      // 地图数据
+      const mapData = provinceData.map(name => {
+        const list = memberData.filter(i => i.province === name)
+        return {
+          name: name,
+          list: list,
+          value: list.length
+        }
+      })
+
+      // 指定图表的配置项和数据
+      const option = {
+        backgroundColor: '#00005a',
+        title: {
+          text: '2024高考录取城市统计',
+          left: 'center',
+          textStyle: { fontSize: 30, color: '#f0f0ff' },
+          top: 20
+        },
+        tooltip: { formatter: params => `${params.name} ${params.value}人<br>${params.data.list.map(i => `${i.name}——${i.school}`).join('<br>')}` },
+        label: {
+          color: '#f0f0ff',
+          formatter: params => (params.value ? `${params.name} ${params.value}人` : params.name)
+          // formatter: params => (params.value ? `${params.name} ${params.value}人\n${params.data.list.map(i => `${i.name}`).join('\n')}` : params.name),
+        },
+        visualMap: {
+          min: 0,
+          max: Math.max(...mapData.map(item => item.value)),
+          left: 'left',
+          top: 'bottom',
+          text: ['高', '低'],
+          textStyle: {
+            color: '#f0f0ff'
+          },
+          calculable: true,
+          inRange: { color: ['#a5a5ff', '#0000ff'] },
+          show: true
+        },
+        geo: {
+          map: 'china',
+          aspectScale: 0.85,
+          layoutCenter: ['50%', '50%'], //地图位置
+          layoutSize: '100%',
+          itemStyle: {
+            normal: {
+              shadowColor: '#5a5aa5',
+              shadowOffsetX: 0,
+              shadowOffsetY: 15,
+              opacity: 0.5
+            }
+          },
+          regions: [{ name: '南海诸岛', itemStyle: { normal: { opacity: 0 } } }]
+        },
+        series: [
+          {
+            type: 'map',
+            mapType: 'china',
+            aspectScale: 0.85,
+            layoutCenter: ['50%', '50%'], //地图位置
+            layoutSize: '100%',
+            zoom: 1, //当前视角的缩放比例
+            // label: { normal: { show: true }, emphasis: { show: true } },
+            // labelLayout: params => {
+            //   console.log(params)
+            //   return {
+            //     x: params.rect.x + 10,
+            //     y: params.rect.y + params.rect.height / 2,
+            //     verticalAlign: 'middle',
+            //     align: 'left'
+            //   }
+            // },
+            // labelLine:{
+            //   show: true,
+            //   showAbove:true,
+            //   lineStyle: {
+            //     color: '#fff',
+            //     width: 2,
+            //     type: 'solid'
+            //   }
+            // },
+            itemStyle: {
+              normal: {
+                areaColor: '#b4b4ff',
+                borderColor: '#1cccff',
+                borderWidth: 1.5,
+                label: {
+                  color: '#f0f0ff',
+                  show: true
+                }
+              },
+              emphasis: {
+                areaColor: '#5a5aa5',
+                label: {
+                  color: '#f0f0ff',
+                  show: true
+                }
+              }
+            },
+            data: mapData
+          }
+        ]
+      }
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option)
+    </script>
+  </body>
+</html>
