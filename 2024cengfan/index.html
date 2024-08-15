@@ -286,13 +286,6 @@
 
       // 使用刚指定的配置项和数据显示图表。
       myChart.setOption(option)
-
-      myChart.getZr().on('click', function (params) {
-        // 控制台打印数据的名称
-        console.log(params)
-        let [longitude, latitude] = myChart.convertFromPixel('geo', [params.offsetX, params.offsetY])
-        console.log(`labelLng:${longitude}, labelLat:${latitude}`)
-      })
     </script>
   </body>
 </html>
