@@ -32,7 +32,7 @@
       // )
 
       // 文字颜色
-      const textColor = '#f0f0ff'
+      const textColor = '#000'
       // 对齐空格
       const nbsp = Array.from({ length: 17 }, () => ' ').join('')
 
@@ -102,40 +102,40 @@
 
       // 省份数据，省份名称，省会名称，省会经度、纬度，省份标签位置
       const provinceData = [
-        { name: '北京', lng: 116.405285, lat: 39.904989, labelLng: 105, labelLat: 40, align: 'right', verticalAlign: 'bottom' },
-        { name: '天津', lng: 117.190182, lat: 39.125596, labelLng: 100, labelLat: 40 },
-        { name: '河北', lng: 114.502461, lat: 38.045474, labelLng: 100, labelLat: 40 },
-        { name: '山西', lng: 111.849248, lat: 36.857014, labelLng: 95, labelLat: 35, verticalAlign: 'bottom' },
-        { name: '内蒙古', lng: 111.670801, lat: 41.818311, labelLng: 100, labelLat: 40 },
+        { name: '北京', lng: 116.3683244, lat: 39.915085, labelLng: 105, labelLat: 40, align: 'right', verticalAlign: 'bottom' },
+        { name: '天津', lng: 117.190182, lat: 39.125596, labelLng: 0, labelLat: 0 },
+        { name: '河北', lng: 114.502461, lat: 38.045474, labelLng: 0, labelLat: 0 },
+        { name: '山西', lng: 112.549248, lat: 37.857014, labelLng: 95, labelLat: 35, verticalAlign: 'bottom' },
+        { name: '内蒙古', lng: 111.670801, lat: 40.818311, labelLng: 0, labelLat: 0 },
         { name: '辽宁', lng: 123.429096, lat: 41.796767, labelLng: 117, labelLat: 30, align: 'left', verticalAlign: 'top' },
         { name: '吉林', lng: 125.3245, lat: 43.886841, labelLng: 120, labelLat: 42, align: 'left', verticalAlign: 'bottom' },
-        { name: '黑龙江', lng: 128.642464, lat: 46.756967, labelLng: 100, labelLat: 40 },
-        { name: '上海', lng: 121.472644, lat: 31.231706, labelLng: 100, labelLat: 40 },
-        { name: '江苏', lng: 119.767413, lat: 33.041544, labelLng: 117, labelLat: 22, align: 'left' },
-        { name: '浙江', lng: 120.153576, lat: 29.287459, labelLng: 100, labelLat: 40 },
-        { name: '安徽', lng: 117.283042, lat: 31.26119, labelLng: 100, labelLat: 40 },
-        { name: '福建', lng: 118.306239, lat: 26.075302, labelLng: 115, labelLat: 7 },
-        { name: '江西', lng: 115.592151, lat: 27.676493, labelLng: 100, labelLat: 40 },
-        { name: '山东', lng: 118.000923, lat: 36.275807, labelLng: 100, labelLat: 40 },
-        { name: '河南', lng: 113.665412, lat: 33.757975, labelLng: 130, labelLat: 25 },
-        { name: '湖北', lng: 113.298572, lat: 30.684355, labelLng: 114, labelLat: 17, align: 'left', verticalAlign: 'middle' },
-        { name: '湖南', lng: 111.782279, lat: 28.09409, labelLng: 100, labelLat: 40 },
+        { name: '黑龙江', lng: 126.642464, lat: 45.756967, labelLng: 0, labelLat: 0 },
+        { name: '上海', lng: 121.490317, lat: 31.222771, labelLng: 0, labelLat: 0 },
+        { name: '江苏', lng: 118.767413, lat: 32.041544, labelLng: 117, labelLat: 22, align: 'left' },
+        { name: '浙江', lng: 120.153576, lat: 30.287459, labelLng: 0, labelLat: 0 },
+        { name: '安徽', lng: 117.283042, lat: 31.86119, labelLng: 0, labelLat: 0 },
+        { name: '福建', lng: 119.306239, lat: 26.075302, labelLng: 115, labelLat: 7 },
+        { name: '江西', lng: 115.892151, lat: 28.676493, labelLng: 0, labelLat: 0 },
+        { name: '山东', lng: 117.000923, lat: 36.675807, labelLng: 0, labelLat: 0 },
+        { name: '河南', lng: 113.665412, lat: 34.757975, labelLng: 130, labelLat: 25 },
+        { name: '湖北', lng: 114.29857, lat: 30.584355, labelLng: 114, labelLat: 17, align: 'left', verticalAlign: 'middle' },
+        { name: '湖南', lng: 112.982279, lat: 28.19409, labelLng: 0, labelLat: 0 },
         { name: '广东', lng: 113.280637, lat: 23.125178, labelLng: 100, labelLat: 5 },
         { name: '广西', lng: 108.320004, lat: 22.82402, labelLng: 85, labelLat: 10, verticalAlign: 'top' },
-        { name: '海南', lng: 109.83119, lat: 19.031971, labelLng: 90, labelLat: 5, verticalAlign: 'top' },
-        { name: '重庆', lng: 107.304962, lat: 29.533155, labelLng: 70, labelLat: 17 },
-        { name: '四川', lng: 104.065735, lat: 30.659462, labelLng: 60, labelLat: 15 },
+        { name: '海南', lng: 109.83119, lat: 20.031971, labelLng: 90, labelLat: 5, verticalAlign: 'top' },
+        { name: '重庆', lng: 108.380246, lat: 30.807807, labelLng: 70, labelLat: 17 },
+        { name: '四川', lng: 104.065735, lat: 30.659462, labelLng: 0, labelLat: 0 },
         { name: '贵州', lng: 106.713478, lat: 26.578343, labelLng: 75, labelLat: 13 },
-        { name: '云南', lng: 101.512251, lat: 24.740609, labelLng: 70, labelLat: 10 },
-        { name: '西藏', lng: 89.132212, lat: 30.860361, labelLng: 55, labelLat: 20 },
-        { name: '陕西', lng: 108.948024, lat: 34.263161, labelLng: 100, labelLat: 40 },
-        { name: '甘肃', lng: 103.823557, lat: 36.058039, labelLng: 55, labelLat: 30 },
-        { name: '青海', lng: 96.778916, lat: 35.623178, labelLng: 50, labelLat: 25 },
-        { name: '宁夏', lng: 106.278179, lat: 37.26637, labelLng: 63, labelLat: 25 },
-        { name: '新疆', lng: 85.617733, lat: 40.792818, labelLng: 65, labelLat: 35 },
-        { name: '台湾', lng: 121.509062, lat: 24.044332, labelLng: 100, labelLat: 40 },
-        { name: '香港', lng: 114.173355, lat: 22.320048, labelLng: 100, labelLat: 40 },
-        { name: '澳门', lng: 113.54909, lat: 22.198951, labelLng: 100, labelLat: 40 },
+        { name: '云南', lng: 102.712251, lat: 25.040609, labelLng: 0, labelLat: 0 },
+        { name: '西藏', lng: 91.132212, lat: 29.660361, labelLng: 0, labelLat: 0 },
+        { name: '陕西', lng: 108.948024, lat: 34.263161, labelLng: 0, labelLat: 0 },
+        { name: '甘肃', lng: 103.823557, lat: 36.058039, labelLng: 0, labelLat: 0 },
+        { name: '青海', lng: 101.778916, lat: 36.623178, labelLng: 0, labelLat: 0 },
+        { name: '宁夏', lng: 106.278179, lat: 38.46637, labelLng: 63, labelLat: 25 },
+        { name: '新疆', lng: 87.617733, lat: 43.792818, labelLng: 65, labelLat: 35 },
+        { name: '台湾', lng: 121.559, lat: 25.0904, labelLng: 0, labelLat: 0 },
+        { name: '香港', lng: 114.173355, lat: 22.320048, labelLng: 0, labelLat: 0 },
+        { name: '澳门', lng: 113.54909, lat: 22.198951, labelLng: 0, labelLat: 0 },
         { name: '南海诸岛', lng: 0, lat: 0, labelLng: 0, labelLat: 0 }
       ]
 
@@ -167,7 +167,6 @@
 
       // 指定图表的配置项和数据
       const option = {
-        backgroundColor: '#003366',
         title: [
           {
             text: '2024届三（三）班毕业同学蹭饭圈',
@@ -196,7 +195,7 @@
           textStyle: { color: textColor },
           calculable: true,
           outOfRange: { color: 'gray' },
-          inRange: { color: ['#a5a5ff', '#0000ff'] },
+          inRange: { color: ['#e0ffff', '#1790cf'] },
           show: true
         },
         geo: [
@@ -209,7 +208,7 @@
             layoutSize: '100%',
             itemStyle: {
               normal: {
-                shadowColor: '#8cd3ef',
+                shadowColor: '#a5e7f0',
                 shadowOffsetY: 10,
                 shadowBlur: 120
               }
@@ -225,7 +224,7 @@
             layoutSize: '100%',
             itemStyle: {
               normal: {
-                shadowColor: '#5a5aa5',
+                shadowColor: '#516b91',
                 shadowOffsetX: 0,
                 shadowOffsetY: 15,
                 opacity: 0.5
@@ -244,8 +243,8 @@
             layoutSize: '100%',
             label: { normal: { show: true, color: textColor }, emphasis: { show: true, color: textColor }, formatter: params => (params.value ? `${params.name} ${params.value}人` : params.name) },
             itemStyle: {
-              normal: { areaColor: '#b4b4ff', borderColor: '#5a5aa5', borderWidth: 1.5 },
-              emphasis: { areaColor: '#5a5aa5' }
+              normal: { borderColor: '#cccccc', borderWidth: 1.5 },
+              emphasis: { areaColor: '#afe8ff' }
             },
             data: mapData
           },
@@ -259,9 +258,9 @@
               show: true,
               padding: [10, 10],
               color: textColor,
-              backgroundColor: '#1a3961',
+              backgroundColor: '#fff',
               borderRadius: 10,
-              borderColor: '#aee9fb',
+              borderColor: '#aaa',
               borderWidth: 1,
               formatter(params) {
                 let list = params.data.list.map(i => `{name|${i.name}：}{school|${i.school}}`)
@@ -275,7 +274,7 @@
               }
             },
             lineStyle: {
-              color: textColor,
+              color: '#aaa9',
               type: 'solid',
               width: 2,
               opacity: 1
