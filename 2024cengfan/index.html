@@ -33,8 +33,6 @@
 
       // 文字颜色
       const textColor = '#000'
-      // 对齐空格
-      const nbsp = Array.from({ length: 17 }, () => ' ').join('')
 
       // 成员数据，姓名、地区、学校
       const memberData = [
@@ -142,7 +140,6 @@
       // 地图数据
       const mapData = provinceData.map(item => ({
         name: item.name,
-        list: memberData.filter(i => i.province === item.name),
         value: memberData.filter(i => i.province === item.name).length
       }))
 
@@ -175,16 +172,13 @@
             top: 20
           },
           {
-            subtext: `班主任：张伟虎\n任课老师：语文：杨勇\n${nbsp}数学：朱海学\n${nbsp}日语：仲雅青、贾谭\n${nbsp}物理：张华\n${nbsp}化学：张伟虎\n${nbsp}生物：朱向克`,
-            subtextStyle: { fontSize: 20, lineHeight: 20, color: textColor },
+            subtext: `{title|班主任：}张伟虎\n{title|任课老师：}语文：杨勇\n{title|}数学：朱海学\n{title|}日语：仲雅青、贾谭\n{title|}物理：张华\n{title|}化学：张伟虎\n{title|}生物：朱向克`,
+            subtextStyle: { fontSize: 20, lineHeight: 20, color: textColor, rich: { title: { width: 100, fontSize: 20 } } },
             left: 20,
             top: 20
           }
         ],
         toolbox: { feature: { saveAsImage: { show: true } }, iconStyle: { borderColor: textColor, borderWidth: 2 }, top: 20, right: 20 },
-        // tooltip: {
-        //   formatter: params => `${params.name} ${params.value}人<br>${params.data.list.map(i => `${i.name}-${i.school}`).join('<br>')}`
-        // },
         visualMap: {
           // 地图深浅高亮
           min: 0,
@@ -270,7 +264,7 @@
               rich: {
                 title: { fontSize: 14, fontWeight: 'bold', padding: [0, 0, 10, 0] },
                 name: { fontSize: 12, lineHeight: 14, width: 90, align: 'left' },
-                school: { fontSize: 14 }
+                school: { fontSize: 12, align: 'left' }
               }
             },
             lineStyle: {
