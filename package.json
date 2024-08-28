@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yanghan0218/yanghan0218.github.io.git"
+    "url": "git+https://github.com/yangh9/yangh9.github.io.git"
   },
   "keywords": [
     "homepage"
   ],
   "author": {
-    "email": "15238117739@163.com",
+    "email": "yangh90218@163.com",
     "name": "homepage",
-    "url": "https://www.hanhais.com"
+    "url": "https://yangh9.github.io"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yanghan0218/yanghan0218.github.io/issues"
+    "url": "https://github.com/yangh9/yangh9.github.io/issues"
   },
-  "homepage": "https://www.hanhais.com"
+  "homepage": "https://yangh9.github.io"
 }
