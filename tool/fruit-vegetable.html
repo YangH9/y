@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>文本生成复制</title>
+    <link rel="stylesheet" href="../css/element-plus.css" />
+
+    <script src="../js/vue3.js"></script>
+    <script src="../js/element-plus.js"></script>
+    <script src="../js/element-plus-icon.js"></script>
+    <script src="../js/vueuse-shared.js"></script>
+    <script src="../js/vueuse-core.js"></script>
+    <style>
+      .d_flex {
+        display: flex;
+      }
+      .items_center {
+        align-items: center;
+      }
+      .mb_2 {
+        margin-bottom: 0.5rem;
+      }
+      .w_100 {
+        width: 100%;
+      }
+      .grow {
+        flex-grow: 1;
+      }
+      .el-form .el-form-item:last-child {
+        margin-bottom: 0;
+      }
+      .el-card:last-child {
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <el-affix :offset="10" style="height: 50px">
+        <el-button :icon="DocumentCopy" type="primary" @click="copyText">点击复制</el-button>
+        <el-button :icon="Plus" type="primary" plain @click="() => addItem()">添加</el-button>
+        <el-button :icon="View" type="primary" plain @click="showPreview">查看</el-button>
+      </el-affix>
+      <el-card class="mb_2">
+        <el-form label-width="auto">
+          <el-form-item label="标题">
+            <el-input v-model="titleStr" />
+          </el-form-item>
+        </el-form>
+      </el-card>
+      <el-card v-for="(item,index) of fruitVegetableData" :key="item" class="mb_2">
+        <template #header>
+          <div class="d_flex items_center">
+            <span class="grow">水果/蔬菜-{{index + 1}}</span>
+            <div class="grow"></div>
+            <div>
+              <el-button :icon="Plus" type="primary" plain @click="() => addItem(index)">添加</el-button>
+              <el-button :icon="Delete" type="danger" plain @click="() => deleteItem(index)">删除</el-button>
+            </div>
+          </div>
+        </template>
+        <el-form label-width="auto">
+          <el-form-item label="名称">
+            <el-input v-model="item.name" />
+          </el-form-item>
+          <el-form-item label="价格">
+            <el-input-number v-model="item.price" :step="0.01" class="grow" />
+          </el-form-item>
+          <el-form-item label="数量">
+            <el-input-number v-model="item.num" :step="1" class="grow" />
+          </el-form-item>
+          <el-form-item label="单位">
+            <el-radio-group v-model="item.unit">
+              <el-radio v-for="(item,index) of unitList" :key="item.value" :value="item.value">{{item.label}}</el-radio>
+            </el-radio-group>
+          </el-form-item>
+        </el-form>
+      </el-card>
+    </div>
+    <script>
+      const { createApp, nextTick, ref, h } = Vue
+      const { useStorage } = VueUse
+      const { ElMessage, ElMessageBox } = ElementPlus
+      createApp({
+        setup() {
+          const priceNum = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+          const numText = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十']
+          // 单位数据列表
+          const unitList = [
+            { label: '斤', value: 'jin' },
+            { label: '个', value: 'ge' },
+            { label: '袋', value: 'dai' }
+          ]
+          // 水果蔬菜默认对象数据
+          const defaultItem = {
+            name: '',
+            price: 0.01,
+            unit: 'jin',
+            num: 1
+          }
+
+          // 标题
+          const titleStr = useStorage('fruit-vegetable-title', '今日水果、蔬菜价格')
+          // 水果蔬菜数据
+          const fruitVegetableData = useStorage('fruit-vegetable-data', [JSON.parse(JSON.stringify(defaultItem))])
+
+          // 水果蔬菜文本拼接
+          const fruitVegetableText = ref('')
+
+          // 添加
+          const addItem = index => {
+            index === undefined ? fruitVegetableData.value.push(JSON.parse(JSON.stringify(defaultItem))) : fruitVegetableData.value.splice(index + 1, 0, JSON.parse(JSON.stringify(defaultItem)))
+          }
+          // 删除
+          const deleteItem = index => {
+            fruitVegetableData.value.splice(index, 1)
+          }
+
+          // 拼接文本
+          const spliceText = () => {
+            let str = `${titleStr.value}\n${fruitVegetableData.value
+              .map(item => {
+                let price = item.price
+                let num = numText[item.num]
+                let unit = unitList.find(i => i.value === item.unit).label
+                return `${item.name} ${price}元 ${num}${unit}`
+              })
+              .join('\n')}`
+            fruitVegetableText.value = str
+          }
+
+          // 复制
+          const copyText = () => {
+            spliceText()
+            const textarea = document.createElement('textarea')
+            textarea.style.opacity = '0'
+            textarea.value = fruitVegetableText.value
+            document.body.appendChild(textarea)
+            textarea.select()
+            document.execCommand('Copy')
+            document.body.removeChild(textarea)
+            ElMessage.success('复制成功')
+          }
+
+          // 预览
+          const showPreview = () => {
+            spliceText()
+            ElMessageBox({
+              message: h(
+                'div',
+                { style: 'max-height:80vh;overflow:auto;width:80vw;' },
+                fruitVegetableText.value.split('\n').map(item => h('div', item))
+              ),
+              showCancelButton: true,
+              confirmButtonText: '复制',
+              cancelButtonText: '关闭',
+              customStyle: { width: 'auto', maxWidth: 'unset' }
+            })
+              .then(res => {
+                copyText()
+              })
+              .catch(() => {})
+          }
+
+          return {
+            ...ElementPlusIconsVue,
+            titleStr,
+            unitList,
+            fruitVegetableData,
+            fruitVegetableText,
+            addItem,
+            deleteItem,
+            showPreview,
+            copyText
+          }
+        }
+      })
+        .use(ElementPlus)
+        .mount('#app')
+    </script>
+  </body>
+</html>
