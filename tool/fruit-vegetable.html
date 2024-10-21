@@ -67,7 +67,7 @@
             <el-input v-model="item.name" />
           </el-form-item>
           <el-form-item label="价格">
-            <el-input-number v-model="item.price" :step="0.01" class="grow" />
+            <el-input-number v-model="item.price" :step="0.01" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="数量">
             <el-input-number v-model="item.num" :step="1" class="grow" />
@@ -119,6 +119,10 @@
           // 删除
           const deleteItem = index => {
             fruitVegetableData.value.splice(index, 1)
+          }
+          // 清空
+          const clearList = () => {
+            fruitVegetableData.value = [JSON.parse(JSON.stringify(defaultItem))]
           }
 
           // 拼接文本
