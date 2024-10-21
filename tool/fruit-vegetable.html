@@ -86,7 +86,7 @@
       const { ElMessage, ElMessageBox } = ElementPlus
       createApp({
         setup() {
-          const priceNum = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+          const priceText = { 0: '0️⃣', 1: '1️⃣', 2: '2️⃣', 3: '3️⃣', 4: '4️⃣', 5: '5️⃣', 6: '6️⃣', 7: '7️⃣', 8: '8️⃣', 9: '9️⃣', '.': '.' }
           const numText = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十']
           // 单位数据列表
           const unitList = [
@@ -112,7 +112,9 @@
 
           // 添加
           const addItem = index => {
-            index === undefined ? fruitVegetableData.value.push(JSON.parse(JSON.stringify(defaultItem))) : fruitVegetableData.value.splice(index + 1, 0, JSON.parse(JSON.stringify(defaultItem)))
+            index === undefined
+              ? fruitVegetableData.value.push(JSON.parse(JSON.stringify(defaultItem)))
+              : fruitVegetableData.value.splice(index + 1, 0, JSON.parse(JSON.stringify(defaultItem)))
           }
           // 删除
           const deleteItem = index => {
@@ -123,10 +125,14 @@
           const spliceText = () => {
             let str = `${titleStr.value}\n${fruitVegetableData.value
               .map(item => {
-                let price = item.price
+                let price = `${item.price}`
+                  .split('')
+                  .map(i => priceText[i])
+                  .join('')
                 let num = numText[item.num]
                 let unit = unitList.find(i => i.value === item.unit).label
-                return `${item.name} ${price}元 ${num}${unit}`
+                console.log(price)
+                return `[烟花]${item.name} ${price}元 ${num}${unit}`
               })
               .join('\n')}`
             fruitVegetableText.value = str
