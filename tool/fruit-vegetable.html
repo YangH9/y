@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>文本生成复制</title>
     <link rel="stylesheet" href="../css/element-plus.css" />
-
     <script src="../js/vue3.js"></script>
     <script src="../js/element-plus.js"></script>
     <script src="../js/element-plus-icon.js"></script>
@@ -36,7 +35,6 @@
       }
     </style>
   </head>
-
   <body>
     <div id="app">
       <el-affix :offset="10" style="height: 50px">
@@ -73,7 +71,7 @@
             <el-input-number v-model="item.price" :step="0.01" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="数量">
-            <el-input-number v-model="item.num" :step="1" class="grow" />
+            <el-input-number v-model="item.num" :step="1" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="单位">
             <el-radio-group v-model="item.unit">
@@ -83,117 +81,115 @@
         </el-form>
       </el-card>
     </div>
-    <script>
-      const { createApp, nextTick, ref, h } = Vue
-      const { useStorage } = VueUse
-      const { ElMessage, ElMessageBox } = ElementPlus
-      createApp({
-        setup() {
-          const priceText = { 0: '0️⃣', 1: '1️⃣', 2: '2️⃣', 3: '3️⃣', 4: '4️⃣', 5: '5️⃣', 6: '6️⃣', 7: '7️⃣', 8: '8️⃣', 9: '9️⃣', '.': '.' }
-          const numText = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十']
-          // 单位数据列表
-          const unitList = [
-            { label: '斤', value: 'jin' },
-            { label: '个', value: 'ge' },
-            { label: '袋', value: 'dai' }
-          ]
-          // 水果蔬菜默认对象数据
-          const defaultItem = {
-            name: '',
-            price: 0.01,
-            unit: 'jin',
-            num: 1
-          }
-
-          // 标题
-          const titleStr = useStorage('fruit-vegetable-title', '今日水果、蔬菜价格')
-          // 水果蔬菜数据
-          const fruitVegetableData = useStorage('fruit-vegetable-data', [JSON.parse(JSON.stringify(defaultItem))])
-
-          // 水果蔬菜文本拼接
-          const fruitVegetableText = ref('')
-
-          // 添加
-          const addItem = index => {
-            index === undefined
-              ? fruitVegetableData.value.push(JSON.parse(JSON.stringify(defaultItem)))
-              : fruitVegetableData.value.splice(index + 1, 0, JSON.parse(JSON.stringify(defaultItem)))
-          }
-          // 删除
-          const deleteItem = index => {
-            fruitVegetableData.value.splice(index, 1)
-          }
-          // 清空
-          const clearList = () => {
-            fruitVegetableData.value = [JSON.parse(JSON.stringify(defaultItem))]
-          }
-
-          // 拼接文本
-          const spliceText = () => {
-            let str = `${titleStr.value}\n${fruitVegetableData.value
-              .map(item => {
-                let price = `${item.price}`
-                  .split('')
-                  .map(i => priceText[i])
-                  .join('')
-                let num = numText[item.num]
-                let unit = unitList.find(i => i.value === item.unit).label
-                console.log(price)
-                return `[烟花]${item.name} ${price}元 ${num}${unit}`
-              })
-              .join('\n')}`
-            fruitVegetableText.value = str
-          }
-
-          // 复制
-          const copyText = () => {
-            spliceText()
-            const textarea = document.createElement('textarea')
-            textarea.style.opacity = '0'
-            textarea.value = fruitVegetableText.value
-            document.body.appendChild(textarea)
-            textarea.select()
-            document.execCommand('Copy')
-            document.body.removeChild(textarea)
-            ElMessage.success('复制成功')
-          }
-
-          // 预览
-          const showPreview = () => {
-            spliceText()
-            ElMessageBox({
-              message: h(
-                'div',
-                { style: 'max-height:80vh;overflow:auto;width:80vw;' },
-                fruitVegetableText.value.split('\n').map(item => h('div', item))
-              ),
-              showCancelButton: true,
-              confirmButtonText: '复制',
-              cancelButtonText: '关闭',
-              customStyle: { width: 'auto', maxWidth: 'unset' }
-            })
-              .then(res => {
-                copyText()
-              })
-              .catch(() => {})
-          }
-
-          return {
-            ...ElementPlusIconsVue,
-            titleStr,
-            unitList,
-            fruitVegetableData,
-            fruitVegetableText,
-            addItem,
-            deleteItem,
-            clearList,
-            showPreview,
-            copyText
-          }
-        }
-      })
-        .use(ElementPlus)
-        .mount('#app')
-    </script>
   </body>
+  <script>
+    const { createApp, nextTick, ref, h } = Vue
+    const { useStorage } = VueUse
+    const { ElMessage, ElMessageBox } = ElementPlus
+    createApp({
+      setup() {
+        const blockNum = { 0: '0️⃣', 1: '1️⃣', 2: '2️⃣', 3: '3️⃣', 4: '4️⃣', 5: '5️⃣', 6: '6️⃣', 7: '7️⃣', 8: '8️⃣', 9: '9️⃣', '.': '.' }
+        const ChineseNum = { 0: '', 1: '一', 2: '二', 3: '三', 4: '四', 5: '五', 6: '六', 7: '七', 8: '八', 9: '九', 10: '十' }
+        // 单位数据列表
+        const unitList = [
+          { label: '斤', value: 'jin' },
+          { label: '个', value: 'ge' },
+          { label: '袋', value: 'dai' }
+        ]
+        // 水果蔬菜默认对象数据
+        const defaultItem = {
+          name: '',
+          price: 0.01,
+          unit: 'jin',
+          num: 1
+        }
+
+        // 标题
+        const titleStr = useStorage('fruit-vegetable-title', '今日水果、蔬菜价格')
+        // 水果蔬菜数据
+        const fruitVegetableData = useStorage('fruit-vegetable-data', [JSON.parse(JSON.stringify(defaultItem))])
+        // 水果蔬菜文本拼接
+        const fruitVegetableText = ref('')
+
+        // 添加
+        const addItem = index => {
+          index === undefined
+            ? fruitVegetableData.value.push(JSON.parse(JSON.stringify(defaultItem)))
+            : fruitVegetableData.value.splice(index + 1, 0, JSON.parse(JSON.stringify(defaultItem)))
+        }
+        // 删除
+        const deleteItem = index => {
+          fruitVegetableData.value.splice(index, 1)
+        }
+        // 清空
+        const clearList = () => {
+          fruitVegetableData.value = [JSON.parse(JSON.stringify(defaultItem))]
+        }
+
+        // 拼接文本
+        const spliceText = () => {
+          let str = `${titleStr.value}\n${fruitVegetableData.value
+            .map(item => {
+              let price = `${item.price}`
+                .split('')
+                .map(i => blockNum[i])
+                .join('')
+              let num = item.unit === 'jin' ? ChineseNum[item.num] : blockNum[item.num]
+              let unit = unitList.find(i => i.value === item.unit).label
+              return `[烟花]${item.name} ${price}元 ${num}${unit}`
+            })
+            .join('\n')}`
+          fruitVegetableText.value = str
+        }
+
+        // 复制
+        const copyText = () => {
+          spliceText()
+          const textarea = document.createElement('textarea')
+          textarea.style.opacity = '0'
+          textarea.value = fruitVegetableText.value
+          document.body.appendChild(textarea)
+          textarea.select()
+          document.execCommand('Copy')
+          document.body.removeChild(textarea)
+          ElMessage.success('复制成功')
+        }
+
+        // 预览
+        const showPreview = () => {
+          spliceText()
+          ElMessageBox({
+            message: h(
+              'div',
+              { style: 'max-height:80vh;overflow:auto;width:80vw;' },
+              fruitVegetableText.value.split('\n').map(item => h('div', item))
+            ),
+            showCancelButton: true,
+            confirmButtonText: '复制',
+            cancelButtonText: '关闭',
+            customStyle: { width: 'auto', maxWidth: 'unset' }
+          })
+            .then(res => {
+              copyText()
+            })
+            .catch(() => {})
+        }
+
+        return {
+          ...ElementPlusIconsVue,
+          titleStr,
+          unitList,
+          fruitVegetableData,
+          fruitVegetableText,
+          addItem,
+          deleteItem,
+          clearList,
+          showPreview,
+          copyText
+        }
+      }
+    })
+      .use(ElementPlus)
+      .mount('#app')
+  </script>
 </html>
