@@ -40,9 +40,12 @@
   <body>
     <div id="app">
       <el-affix :offset="10" style="height: 50px">
-        <el-button :icon="DocumentCopy" type="primary" @click="copyText">点击复制</el-button>
-        <el-button :icon="Plus" type="primary" plain @click="() => addItem()">添加</el-button>
-        <el-button :icon="View" type="primary" plain @click="showPreview">查看</el-button>
+        <div class="d_flex">
+          <el-button :icon="DocumentCopy" type="primary" @click="copyText">复制</el-button>
+          <el-button :icon="Plus" type="primary" plain @click="() => addItem()">添加</el-button>
+          <el-button :icon="Delete" type="danger" plain @click="clearList">清空</el-button>
+          <el-button :icon="View" type="primary" plain @click="showPreview">查看</el-button>
+        </div>
       </el-affix>
       <el-card class="mb_2">
         <el-form label-width="auto">
@@ -183,6 +186,7 @@
             fruitVegetableText,
             addItem,
             deleteItem,
+            clearList,
             showPreview,
             copyText
           }
