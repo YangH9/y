@@ -27,6 +27,9 @@
       .grow {
         flex-grow: 1;
       }
+      .no_wrap {
+        flex-wrap: nowrap;
+      }
       .el-form .el-form-item:last-child {
         margin-bottom: 0;
       }
@@ -74,8 +77,11 @@
             <el-input-number v-model="item.num" :step="1" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="单位">
-            <el-radio-group v-model="item.unit">
-              <el-radio v-for="(item,index) of unitList" :key="item.value" :value="item.value">{{item.label}}</el-radio>
+            <el-radio-group v-model="item.unit" class="d_flex no_wrap">
+              <el-radio v-for="(item,index) of unitList" :key="item.value" :value="item.value">
+                <template v-if="item.value !== 'custom'">{{item.label}}</template>
+                <template v-else><el-input v-model="item.label" class="grow" @focus="e=> e.target.select()" /></template>
+              </el-radio>
             </el-radio-group>
           </el-form-item>
         </el-form>
@@ -93,8 +99,11 @@
         // 单位数据列表
         const unitList = [
           { label: '斤', value: 'jin' },
-          { label: '个', value: 'ge' },
-          { label: '袋', value: 'dai' }
+          // { label: '个', value: 'ge' },
+          // { label: '袋', value: 'dai' },
+          // { label: '筐', value: 'kuang' },
+          // { label: '盒', value: 'he' },
+          { label: '自定义', value: 'custom' }
         ]
         // 水果蔬菜默认对象数据
         const defaultItem = {
