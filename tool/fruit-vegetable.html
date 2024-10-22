@@ -65,7 +65,7 @@
         </template>
         <el-form label-width="auto">
           <el-form-item label="名称">
-            <el-input v-model="item.name" />
+            <el-input v-model="item.name" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="价格">
             <el-input-number v-model="item.price" :step="0.01" class="grow" @focus="e=> e.target.select()" />
