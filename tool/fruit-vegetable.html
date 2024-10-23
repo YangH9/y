@@ -51,7 +51,7 @@
       <el-card class="mb_2">
         <el-form label-width="auto">
           <el-form-item label="标题">
-            <el-input v-model="titleStr" />
+            <el-input v-model="titleStr" placeholder="文案第一行内容" />
           </el-form-item>
         </el-form>
       </el-card>
@@ -68,19 +68,19 @@
         </template>
         <el-form label-width="auto">
           <el-form-item label="名称">
-            <el-input v-model="item.name" @focus="e=> e.target.select()" />
+            <el-input v-model="item.name" placeholder="请输入蔬菜、水果名称" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="价格">
-            <el-input-number v-model="item.price" :step="0.01" class="grow" @focus="e=> e.target.select()" />
+            <el-input-number v-model="item.price" placeholder="请输入蔬菜、水果价格" :step="0.01" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="数量">
-            <el-input-number v-model="item.num" :step="1" class="grow" @focus="e=> e.target.select()" />
+            <el-input-number v-model="item.num" placeholder="请输入蔬菜、水果价格" :step="1" :max="10" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="单位">
             <el-radio-group v-model="item.unit" class="d_flex no_wrap">
-              <el-radio v-for="(item,index) of unitList" :key="item.value" :value="item.value">
-                <template v-if="item.value !== 'custom'">{{item.label}}</template>
-                <template v-else><el-input v-model="item.label" class="grow" @focus="e=> e.target.select()" /></template>
+              <el-radio v-for="(unit,index) of unitList" :key="unit.value" :value="unit.value">
+                <template v-if="unit.value !== 'custom'">{{unit.label}}</template>
+                <template v-else><el-input v-model="item.unitText" placeholder="自定义单位" class="grow" @focus="e=> e.target.select()" /></template>
               </el-radio>
             </el-radio-group>
           </el-form-item>
@@ -94,7 +94,7 @@
     const { ElMessage, ElMessageBox } = ElementPlus
     createApp({
       setup() {
-        const blockNum = { 0: '0️⃣', 1: '1️⃣', 2: '2️⃣', 3: '3️⃣', 4: '4️⃣', 5: '5️⃣', 6: '6️⃣', 7: '7️⃣', 8: '8️⃣', 9: '9️⃣', '.': '.' }
+        const blockNum = { 0: '0️⃣', 1: '1️⃣', 2: '2️⃣', 3: '3️⃣', 4: '4️⃣', 5: '5️⃣', 6: '6️⃣', 7: '7️⃣', 8: '8️⃣', 9: '9️⃣', 10: '1️⃣0️⃣', '.': '.' }
         const ChineseNum = { 0: '', 1: '一', 2: '二', 3: '三', 4: '四', 5: '五', 6: '六', 7: '七', 8: '八', 9: '九', 10: '十' }
         // 单位数据列表
         const unitList = [
@@ -110,6 +110,7 @@
           name: '',
           price: 0.01,
           unit: 'jin',
+          unitText: '',
           num: 1
         }
 
@@ -122,9 +123,7 @@
 
         // 添加
         const addItem = index => {
-          index === undefined
-            ? fruitVegetableData.value.push(JSON.parse(JSON.stringify(defaultItem)))
-            : fruitVegetableData.value.splice(index + 1, 0, JSON.parse(JSON.stringify(defaultItem)))
+          index === undefined ? fruitVegetableData.value.push(JSON.parse(JSON.stringify(defaultItem))) : fruitVegetableData.value.splice(index + 1, 0, JSON.parse(JSON.stringify(defaultItem)))
         }
         // 删除
         const deleteItem = index => {
@@ -144,7 +143,7 @@
                 .map(i => blockNum[i])
                 .join('')
               let num = item.unit === 'jin' ? ChineseNum[item.num] : blockNum[item.num]
-              let unit = unitList.find(i => i.value === item.unit).label
+              let unit = item.unit === 'custom' ? item.unitText : unitList.find(i => i.value === item.unit).label
               return `[烟花]${item.name} ${price}元 ${num}${unit}`
             })
             .join('\n')}`
