@@ -68,13 +68,13 @@
         </template>
         <el-form label-width="auto">
           <el-form-item label="名称">
-            <el-input v-model="item.name" placeholder="请输入蔬菜、水果名称" @focus="e=> e.target.select()" />
+            <el-input v-model="item.name" placeholder="请输入名称" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="价格">
-            <el-input-number v-model="item.price" placeholder="请输入蔬菜、水果价格" :step="0.01" class="grow" @focus="e=> e.target.select()" />
+            <el-input-number v-model="item.price" placeholder="请输入价格" :step="0.01" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="数量">
-            <el-input-number v-model="item.num" placeholder="请输入蔬菜、水果价格" :step="1" :max="10" class="grow" @focus="e=> e.target.select()" />
+            <el-input-number v-model="item.num" placeholder="请输入数量" :step="1" :max="10" class="grow" @focus="e=> e.target.select()" />
           </el-form-item>
           <el-form-item label="单位">
             <el-radio-group v-model="item.unit" class="d_flex no_wrap">
